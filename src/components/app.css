@@ -1,0 +1,22 @@
+.___gatsby {
+    background-color: gray;
+}
+
+main{
+    background-color: gray;
+    padding: 1em 1em 1em 1em;
+}
+
+.week-panels-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.week-panel {
+    display:flex;
+    flex-direction: column;
+    width:50%;
+    padding: 0 4em;
+    align-items: center;
+}

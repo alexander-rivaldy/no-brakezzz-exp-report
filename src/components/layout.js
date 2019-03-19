@@ -9,10 +9,10 @@ import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
 import NavigationBar from "./navigationBar"
 import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "./app.css"
 
 
 const Layout = ({ children }) => (
@@ -29,12 +29,10 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <NavigationBar siteTitle={data.site.siteMetadata.title} />
-        <Header siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
-            maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
+            padding: `0px 1rem 1rem`,
             paddingTop: 0,
           }}
         >
