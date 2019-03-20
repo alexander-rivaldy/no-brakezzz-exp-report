@@ -86,8 +86,9 @@ ShowcasePeople.propTypes = {
 export const ShowcaseReflection = ({children}) => (
 
     <div className={section}>
-
-        {children}
+        <div id="showcase-reflection">
+            {children}
+        </div>
 
     </div>
 

@@ -7,7 +7,7 @@ import {
     ShowcasePeople,
     ShowcaseGroup,
     FACILITATOR,
-    SPEAKER, SCRIBE, OPERATOR
+    SPEAKER, SCRIBE, OPERATOR, ShowcaseReflection, ShowcaseList, ShowcaseListItem
 } from "../components/week-template/week-layout"
 
 
@@ -45,6 +45,24 @@ const Week1 = () => (
             </ShowcaseGroup>
 
         </Showcase>
+
+        <ShowcaseReflection>
+
+            <ShowcaseList name="What went well">
+                <ShowcaseListItem item="This thing went well"/>
+                <ShowcaseListItem item="This thing went well"/>
+                <ShowcaseListItem item="This thing went well"/>
+                <ShowcaseListItem item="This thing went well"/>
+            </ShowcaseList>
+
+            <ShowcaseList name="Possible Improvements">
+                <ShowcaseListItem item="This is possible improvement"/>
+                <ShowcaseListItem item="This is possible improvement"/>
+                <ShowcaseListItem item="This is possible improvement"/>
+                <ShowcaseListItem item="This is possible improvement"/>
+            </ShowcaseList>
+
+        </ShowcaseReflection>
 
 
 

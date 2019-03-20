@@ -70,3 +70,12 @@
     border-radius: 100%;
     margin: 5px;
 }
+
+#showcase-reflection {
+    display: flex;
+    flex-direction: row;
+}
+
+#showcase-reflection > div {
+    width: 50%;
+}
