@@ -25,7 +25,7 @@ const Week1 = () => (
             software like Aldus PageMaker including versions of Lorem Ipsum."
         />
 
-        <Showcase>
+        <Showcase slideUrl="https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000">
             <ShowcaseGroup name={FACILITATOR}>
                 <ShowcasePeople name="Rodney"/>
                 <ShowcasePeople name="Louise"/>

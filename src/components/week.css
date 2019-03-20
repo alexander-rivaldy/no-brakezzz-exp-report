@@ -39,6 +39,16 @@
     flex-direction: row;
 }
 
+.showcase h1 {
+    text-align: center;
+}
+
+#slides {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .showcase > div {
     width: 50%;
 }
@@ -50,7 +60,7 @@
     align-items: flex-start;
 }
 
-.showcase-group h3 {
+.showcase-group h3{
     flex: 0 1 100%;
 }
 
