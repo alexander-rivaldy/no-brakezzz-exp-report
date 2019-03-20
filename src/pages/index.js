@@ -2,7 +2,7 @@ import React from "react"
 import {Link} from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
+import TeamMember from "../components/image"
 import SEO from "../components/seo"
 import PropTypes from "prop-types"
 
@@ -13,8 +13,12 @@ const IndexPage = () => (
         <div className="home-banner">
             <h1>NO BRAKEZZZ</h1>
             <h3>Experience Report</h3>
-            <Image/>
         </div>
+
+        <div className="team-members-container">
+            <TeamMember name="Alex+dev"/>
+        </div>
+
         <div className="week-panels-container">
             <WeekPanel weekNum={"0"} weekDescription={"I just haven't met you yet"}/>
             <WeekPanel weekNum={"1"} weekDescription={"No Brakerzzz Assemble!"}/>
