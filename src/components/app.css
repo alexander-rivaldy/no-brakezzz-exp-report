@@ -1,6 +1,6 @@
 main{
     background-color: #e8e8e8;
-    padding: 1em 1em 1em 1em;
+    padding: 1em 0;
 }
 
 .week-panels-container {
@@ -18,4 +18,13 @@ main{
     align-items: center;
     margin: 1em;
     border: 1px solid black;
+}
+
+.home-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: flex-start;
+    padding-top: 25vh;
 }

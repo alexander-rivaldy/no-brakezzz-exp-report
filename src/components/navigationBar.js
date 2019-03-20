@@ -13,19 +13,19 @@ const NavigationBar = ({ siteTitle }) => (
             <Nav className="mr-auto justify-content-end">
                 <Nav.Link href="#home">Home</Nav.Link>
                 <Nav.Link href="#link">Week 0</Nav.Link>
-                <NavigationWeek weekNum={"Week 1"}/>
-                <NavigationWeek weekNum={"Week 2"}/>
-                <NavigationWeek weekNum={"Week 3"}/>
-                <NavigationWeek weekNum={"Week 4"}/>
-                <NavigationWeek weekNum={"Week 5"}/>
+                <NavigationWeek weekNum={"1"}/>
+                <NavigationWeek weekNum={"2"}/>
+                <NavigationWeek weekNum={"3"}/>
+                <NavigationWeek weekNum={"4"}/>
+                <NavigationWeek weekNum={"5"}/>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
 )
 
 export const NavigationWeek = ({weekNum}) => (
-    <NavDropdown title={weekNum} id="basic-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Overview</NavDropdown.Item>
+    <NavDropdown title={"Week " + weekNum} id="basic-nav-dropdown">
+        <NavDropdown.Item href={"week-" + weekNum}>Overview</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.2">Highlight</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.3">Showcase</NavDropdown.Item>
         <NavDropdown.Item href="#action/3.4">Lesson Learned</NavDropdown.Item>

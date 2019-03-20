@@ -2,7 +2,6 @@ import React from "react"
 import {Link} from "gatsby"
 
 import Layout from "../components/layout"
-import TeamMember from "../components/image"
 import SEO from "../components/seo"
 import PropTypes from "prop-types"
 
@@ -10,10 +9,7 @@ const IndexPage = () => (
     <Layout>
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
 
-        <div className="home-banner">
-            <h1>NO BRAKEZZZ</h1>
-            <h3>Experience Report</h3>
-        </div>
+        <Banner />
 
         <div className="week-panels-container">
             <WeekPanel weekNum={"0"} weekDescription={"I just haven't met you yet"}/>
@@ -27,6 +23,13 @@ const IndexPage = () => (
 
         <Link to="/page-2/">Go to page 2</Link>
     </Layout>
+)
+
+const Banner = () => (
+    <div className="home-banner">
+        <h1>NO BRAKEZZZ</h1>
+        <h3>Experience Report</h3>
+    </div>
 )
 
 
