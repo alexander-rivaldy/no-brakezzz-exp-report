@@ -34,31 +34,16 @@ Overview.propTypes = {
     content: PropTypes.String,
 }
 
-export const Showcase = ({speaker, facilitator, scribe, operator}) => (
+export const Showcase = ({children}) => (
 
     <div className="section">
+        <h1>Showcase</h1>
         <div className="showcase">
             <div id="slides">
 
             </div>
             <div id="showcase-participation">
-                <div className="participants">
-                    <h3>Facilitator</h3>
-                    {facilitator}
-                </div>
-                <div className="participants">
-                    <h3>Speakers</h3>
-                    {speaker}
-                </div>
-                <div className="participants">
-                    <h3>Scribe</h3>
-                    {scribe}
-                </div>
-                <div className="participants">
-                    <h3>Operator</h3>
-                    {operator}
-                </div>
-
+                {children}
             </div>
 
         </div>
@@ -66,13 +51,35 @@ export const Showcase = ({speaker, facilitator, scribe, operator}) => (
     </div>
 
 )
-
-
-
-
 Showcase.propTypes = {
-    speaker: PropTypes.node.isRequired,
-    facilitator: PropTypes.node.isRequired,
-    scribe: PropTypes.node.isRequired,
-    operator: PropTypes.node.isRequired,
+    children: PropTypes.node.isRequired,
 }
+
+export const ShowcaseGroup = ({name, children}) => (
+    <div className="showcase-group">
+        <h3>{name}</h3>
+        {children}
+    </div>
+
+)
+
+ShowcaseGroup.propTypes = {
+    name: PropTypes.String,
+    children: PropTypes.node.isRequired,
+}
+
+
+export const ShowcasePeople = ({name}) => (
+    <img className="showcase-people" src={"images/team/" + name + ".jpg"}/>
+
+)
+
+ShowcasePeople.propTypes = {
+    name: PropTypes.String,
+}
+
+export const FACILITATOR = "Facilitator";
+export const SPEAKER = "Speaker";
+export const SCRIBE = "Scribe";
+export const OPERATOR = "Operator";
+export const RETRO = "Retro Lead";

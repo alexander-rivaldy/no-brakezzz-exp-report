@@ -1,6 +1,14 @@
 import Layout from "../components/layout";
 import React from "react"
-import {WeekBanner, Overview, Showcase} from "../components/week-template/week-layout"
+import {
+    WeekBanner,
+    Overview,
+    Showcase,
+    ShowcasePeople,
+    ShowcaseGroup,
+    FACILITATOR,
+    SPEAKER, SCRIBE, OPERATOR
+} from "../components/week-template/week-layout"
 
 
 const Week1 = () => (
@@ -17,28 +25,34 @@ const Week1 = () => (
             software like Aldus PageMaker including versions of Lorem Ipsum."
         />
 
-        <Showcase
-            speaker={
-                <h1>Speaker</h1>
-            }
+        <Showcase>
+            <ShowcaseGroup name={FACILITATOR}>
+                <ShowcasePeople name="Rodney"/>
+                <ShowcasePeople name="Louise"/>
+            </ShowcaseGroup>
+            <ShowcaseGroup name={SPEAKER}>
+                <ShowcasePeople name="Sarah"/>
+                <ShowcasePeople name="Jacob"/>
+                <ShowcasePeople name="Stivali"/>
+                <ShowcasePeople name="Spandan"/>
+                <ShowcasePeople name="Trystan"/>
+            </ShowcaseGroup>
+            <ShowcaseGroup name={SCRIBE}>
+                <ShowcasePeople name="Pamela"/>
+            </ShowcaseGroup>
+            <ShowcaseGroup name={OPERATOR}>
+                <ShowcasePeople name="Zoey"/>
+            </ShowcaseGroup>
 
-            facilitator={
-                <h1>Facilitator</h1>
-            }
+        </Showcase>
 
-            scribe={
-                <h1>Scribe</h1>
-            }
 
-            operator={
-                <h1>Operator</h1>
-            }
-
-        />
 
     </Layout>
 
 
 )
+
+
 
 export default Week1;
