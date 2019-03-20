@@ -17,3 +17,19 @@
     font-size: 3.5rem;
     align-self: flex-end;
 }
+
+.section {
+    display:flex;
+    flex-direction: column;
+    padding: 2rem 5rem;
+}
+
+.overview h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.overview p {
+    font-size: 1.5rem;
+    text-align: justify;
+}

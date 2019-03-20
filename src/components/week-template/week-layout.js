@@ -3,7 +3,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import "../week.css"
 
-const BannerLayout = ({ weekNum, weekTitle }) => (
+export const WeekBanner = ({ weekNum, weekTitle }) => (
 
     <div className="home-banner week-banner">
         <div className="week-banner-title-container">
@@ -14,9 +14,25 @@ const BannerLayout = ({ weekNum, weekTitle }) => (
 
 )
 
-BannerLayout.propTypes = {
+WeekBanner.propTypes = {
     weekNum: PropTypes.String,
     weekTitle: PropTypes.String,
 }
 
-export default BannerLayout
+export const Overview = ({content}) => {
+
+    return(
+        <div className="section">
+            <div className="overview">
+                <h1>Overview</h1>
+                <p>{content}</p>
+            </div>
+        </div>
+    );
+
+}
+
+Overview.propTypes = {
+    content: PropTypes.String,
+}
+
