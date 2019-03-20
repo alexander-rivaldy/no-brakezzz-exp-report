@@ -15,10 +15,6 @@ const IndexPage = () => (
             <h3>Experience Report</h3>
         </div>
 
-        <div className="team-members-container">
-            <TeamMember name="Alex+dev"/>
-        </div>
-
         <div className="week-panels-container">
             <WeekPanel weekNum={"0"} weekDescription={"I just haven't met you yet"}/>
             <WeekPanel weekNum={"1"} weekDescription={"No Brakerzzz Assemble!"}/>
