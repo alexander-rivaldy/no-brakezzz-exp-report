@@ -7,11 +7,11 @@ import Navbar from "react-bootstrap/Navbar";
 const NavigationBar = ({ siteTitle }) => (
 
     <Navbar pullRight bg="gray" expand="lg">
-        <Navbar.Brand href="#home">{siteTitle}</Navbar.Brand>
+        <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto justify-content-end">
-                <Nav.Link href="#home">Home</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
                 <Nav.Link href="#link">Week 0</Nav.Link>
                 <NavigationWeek weekNum={"1"}/>
                 <NavigationWeek weekNum={"2"}/>

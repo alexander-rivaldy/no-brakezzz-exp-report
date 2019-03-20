@@ -1,6 +1,6 @@
 import Layout from "../components/layout";
 import React from "react"
-import {WeekBanner, Overview} from "../components/week-template/week-layout"
+import {WeekBanner, Overview, Showcase} from "../components/week-template/week-layout"
 
 
 const Week1 = () => (
@@ -15,6 +15,25 @@ const Week1 = () => (
             into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
             software like Aldus PageMaker including versions of Lorem Ipsum."
+        />
+
+        <Showcase
+            speaker={
+                <h1>Speaker</h1>
+            }
+
+            facilitator={
+                <h1>Facilitator</h1>
+            }
+
+            scribe={
+                <h1>Scribe</h1>
+            }
+
+            operator={
+                <h1>Operator</h1>
+            }
+
         />
 
     </Layout>

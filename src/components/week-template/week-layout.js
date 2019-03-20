@@ -19,20 +19,60 @@ WeekBanner.propTypes = {
     weekTitle: PropTypes.String,
 }
 
-export const Overview = ({content}) => {
+export const Overview = ({content}) => (
 
-    return(
-        <div className="section">
-            <div className="overview">
-                <h1>Overview</h1>
-                <p>{content}</p>
-            </div>
+    <div className="section">
+        <div className="overview">
+            <h1>Overview</h1>
+            <p>{content}</p>
         </div>
-    );
+    </div>
 
-}
+)
 
 Overview.propTypes = {
     content: PropTypes.String,
 }
 
+export const Showcase = ({speaker, facilitator, scribe, operator}) => (
+
+    <div className="section">
+        <div className="showcase">
+            <div id="slides">
+
+            </div>
+            <div id="showcase-participation">
+                <div className="participants">
+                    <h3>Facilitator</h3>
+                    {facilitator}
+                </div>
+                <div className="participants">
+                    <h3>Speakers</h3>
+                    {speaker}
+                </div>
+                <div className="participants">
+                    <h3>Scribe</h3>
+                    {scribe}
+                </div>
+                <div className="participants">
+                    <h3>Operator</h3>
+                    {operator}
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+)
+
+
+
+
+Showcase.propTypes = {
+    speaker: PropTypes.node.isRequired,
+    facilitator: PropTypes.node.isRequired,
+    scribe: PropTypes.node.isRequired,
+    operator: PropTypes.node.isRequired,
+}
