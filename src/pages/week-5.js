@@ -7,7 +7,7 @@ import {
     Lesson,
     LessonsLearned,
     OPERATOR,
-    Overview,
+    Overview, RETRO,
     SCRIBE,
     Showcase,
     ShowcaseGroup,
@@ -21,8 +21,8 @@ import {
     Alex,
     Bryce,
     GoCD,
-    Jacob,
-    Monitor,
+    Jacob, Louise,
+    Monitor, Pamela,
     PO,
     Rodney,
     Sarah,
@@ -30,7 +30,7 @@ import {
     Spandan,
     Stivali,
     TeamMemberImage,
-    Trystan
+    Trystan, Zoey
 } from "../components/image";
 
 const ShowcasePeopleClass = "showcase-people";
@@ -50,30 +50,34 @@ const Week5 = () => (
         />
 
         <Highlight>
-            <HighlightItem name="Build Monitor" imageUrl={Monitor} />
-            <HighlightItem name="PO delegate another person to fill in" imageUrl={PO} />
-            <HighlightItem name="Second showcase" imageUrl={ShowcaseIcon}/>
-            <HighlightItem name="PO surprise visit" imageUrl={PO} />
-            <HighlightItem name="Lanavla weekend broken build" imageUrl={GoCD}/>
+            <HighlightItem name="ADD HIGHLIGHT"  />
         </Highlight>
 
-        <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vTtY0Si6JhzLA9F281QCNKTF7X1U1AKJZn-G4NeFsRiQQjubszv16CuRgHumJPlUJNtW_sQnlOsii2L/embed?start=false&loop=false&delayms=10000">
+        <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vQ2tHI_iwSoVdoU_p_DlE8I_3Qp4-t6LMCAFmeL-7wbTs8EBqHRe329aS8ho6f--S2X5DpTlVLL89uH/embed?start=false&loop=false&delayms=10000">
             <ShowcaseGroup name={FACILITATOR}>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Rodney}/>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Jacob}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={SPEAKER}>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Bryce}/>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Stivali}/>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Alex}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Bryce}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Jacob}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Louise}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Pamela}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Sarah}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Spandan}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Stivali}/>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Trystan}/>
-
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Zoey}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={SCRIBE}>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Sarah}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Rodney}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={OPERATOR}>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Spandan}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Stivali}/>
+            </ShowcaseGroup>
+            <ShowcaseGroup name={RETRO}>
+                <h5>Tito</h5>
             </ShowcaseGroup>
 
         </Showcase>

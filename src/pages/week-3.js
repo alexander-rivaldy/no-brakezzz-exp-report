@@ -7,7 +7,7 @@ import {
     Lesson,
     LessonsLearned,
     OPERATOR,
-    Overview,
+    Overview, RETRO,
     SCRIBE,
     Showcase,
     ShowcaseGroup,
@@ -22,7 +22,7 @@ import {
     Bryce,
     GoCD,
     Jacob,
-    Monitor,
+    Monitor, Pamela,
     PO,
     Rodney,
     Sarah,
@@ -74,6 +74,10 @@ const Week3 = () => (
             </ShowcaseGroup>
             <ShowcaseGroup name={OPERATOR}>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Spandan}/>
+            </ShowcaseGroup>
+            <ShowcaseGroup name={RETRO}>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Sarah}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Pamela}/>
             </ShowcaseGroup>
 
         </Showcase>

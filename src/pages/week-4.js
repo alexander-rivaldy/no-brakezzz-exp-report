@@ -7,7 +7,7 @@ import {
     Lesson,
     LessonsLearned,
     OPERATOR,
-    Overview,
+    Overview, RETRO,
     SCRIBE,
     Showcase,
     ShowcaseGroup,
@@ -50,11 +50,7 @@ const Week4 = () => (
         />
 
         <Highlight>
-            <HighlightItem name="Build Monitor" imageUrl={Monitor} />
-            <HighlightItem name="PO delegate another person to fill in" imageUrl={PO} />
-            <HighlightItem name="Second showcase" imageUrl={ShowcaseIcon}/>
-            <HighlightItem name="PO surprise visit" imageUrl={PO} />
-            <HighlightItem name="Lanavla weekend broken build" imageUrl={GoCD}/>
+            <HighlightItem name="ADD HIGLIGHT" />
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vS95JUd2MeFxITq-uHpMCojRR-0emuuzbQFh09FF31Gzgt553XVys5Bqi1_YRkJ8qJgCTTVcHWdSWrc/embed?start=false&loop=false&delayms=10000">
@@ -77,20 +73,22 @@ const Week4 = () => (
             <ShowcaseGroup name={OPERATOR}>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Jacob}/>
             </ShowcaseGroup>
+            <ShowcaseGroup name={RETRO}>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Trystan}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Stivali}/>
+            </ShowcaseGroup>
 
         </Showcase>
 
         <ShowcaseReflection>
 
             <ShowcaseList name="What went well">
-                <ShowcaseListItem item="Country story got deployed to production"/>
                 <ShowcaseListItem item="This thing went well"/>
                 <ShowcaseListItem item="This thing went well"/>
                 <ShowcaseListItem item="This thing went well"/>
             </ShowcaseList>
 
             <ShowcaseList name="Possible Improvements">
-                <ShowcaseListItem item="Communications with PO was minimal up until the showcase"/>
                 <ShowcaseListItem item="This is possible improvement"/>
                 <ShowcaseListItem item="This is possible improvement"/>
                 <ShowcaseListItem item="This is possible improvement"/>

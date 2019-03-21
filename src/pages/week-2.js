@@ -15,9 +15,11 @@ import {
     ShowcaseListItem,
     Highlight,
     HighlightItem,
-    LessonsLearned, Lesson
+    LessonsLearned, Lesson, RETRO
 } from "../components/week-template/week-layout"
 import {
+    Ann,
+    Daniel,
     GoCD,
     Jacob,
     Louise,
@@ -73,6 +75,11 @@ const Week2 = () => (
             <ShowcaseGroup name={OPERATOR}>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Zoey}/>
             </ShowcaseGroup>
+            <ShowcaseGroup name={RETRO}>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Ann}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Daniel}/>
+            </ShowcaseGroup>
+
 
         </Showcase>
 
