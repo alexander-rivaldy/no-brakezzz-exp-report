@@ -10,7 +10,7 @@ import {
     Louise,
     Pamela,
     Rodney, Sarah, Spandan, Stivali,
-    TeamMemberImage, Trystan, Zoey
+    TeamMemberImage, TeamPicture, Trystan, Zoey
 } from "../components/image";
 
 import "../components/team.css"
@@ -24,12 +24,13 @@ const Team = () => (
 
     <Layout>
 
-        <div className="home-banner week-banner">
+        <div className="home-banner week-banner" id="team-banner">
             <div className="team-title week-banner-title-container">
                 <h2>Meet the team!</h2>
                 <h1>No Brakezzz</h1>
             </div>
         </div>
+
 
         <div id="team-content">
             <MemberGroup title="Trainers">

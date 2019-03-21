@@ -43,6 +43,8 @@ export const Stivali = "1CbKi90FjruJhUAJ6NBnkRvlfRbYueDfk";
 export const Trystan = "1_SwFdrr3LpCQ6L3fQEw42Q1CTI0QNtLS";
 export const Zoey = "18oY3r8VMUGck1xbhfejyCA5F9jS5dDNY";
 
+export const TeamPicture = "1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM";
+
 export const TeamMemberImage = ({classname, name}) => (
  <img className={classname} src={"https://drive.google.com/uc?export=view&id="+name}/>
 )

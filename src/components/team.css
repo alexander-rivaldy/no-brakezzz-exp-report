@@ -8,6 +8,10 @@
     align-self: flex-end;
 }
 
+#team-banner {
+    background-image: url('https://drive.google.com/open?id=1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM');
+}
+
 #team-content {
     margin: 0 auto;
     width: 80%;

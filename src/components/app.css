@@ -26,14 +26,15 @@ main{
     height: 75vh;
     justify-content: flex-start;
     padding-top: 25vh;
-
-    /*background: linear-gradient(0deg,rgba(255,255,255,0.5),rgba(255,255,255,0.5)), url('../../public/images/team-picture.jpeg') no-repeat center;*/
-    /*background-size: cover;*/
-    /*position:relative;*/
 }
 
 .inverse {
     flex-direction: column-reverse;
 }
 
-
+footer {
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
