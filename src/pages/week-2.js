@@ -18,6 +18,7 @@ import {
     LessonsLearned, Lesson
 } from "../components/week-template/week-layout"
 import {
+    GoCD,
     Jacob,
     Louise,
     Pamela,
@@ -47,8 +48,8 @@ const Week2 = () => (
         />
 
         <Highlight>
-            <HighlightItem name="First Showcase!"/>
-            <HighlightItem name="CI ENV broke for the first time"/>
+            <HighlightItem name="First Showcase!" />
+            <HighlightItem name="CI ENV broke for the first time" imageUrl={GoCD}/>
 
         </Highlight>
 

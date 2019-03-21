@@ -2,6 +2,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "../week.css"
+import {ImageWithClass} from "../image";
 
 const section = "section";
 
@@ -56,9 +57,10 @@ Highlight.propTypes = {
 }
 
 
-export const HighlightItem = ({name}) => (
+export const HighlightItem = ({name, imageUrl}) => (
 
     <div className="highlight-item">
+        <ImageWithClass url={imageUrl}/>
         <h3>{name}</h3>
     </div>
 
@@ -66,6 +68,7 @@ export const HighlightItem = ({name}) => (
 
 HighlightItem.propTypes = {
     name: PropTypes.String,
+    imageUrl: PropTypes.String,
 }
 
 export const Showcase = ({slideUrl, children}) => (

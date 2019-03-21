@@ -60,6 +60,18 @@ export const TeamMemberImage = ({classname, name}) => (
  <img className={classname} src={"https://drive.google.com/uc?export=view&id="+name}/>
 )
 
+
+export const GoCD = "https://miro.medium.com/max/480/0*M85246Uu7jE4CNp1.png";
+
+export const ImageWithClass = ({classname, url}) => (
+    <img className={classname} src={url} />
+)
+
+ImageWithClass.propTypes = {
+    classname: PropTypes.string,
+    url: PropTypes.string,
+}
+
 TeamMemberImage.propTypes = {
     classname: PropTypes.string,
     name: PropTypes.string,
