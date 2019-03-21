@@ -42,7 +42,7 @@ Overview.propTypes = {
 export const Highlight = ({children}) => (
     <div className={section}>
         <div className="highlight">
-            <h1>Highlight</h1>
+            <h1>Highlights</h1>
             <div>
                 {children}
             </div>
@@ -180,7 +180,7 @@ LessonsLearned.propTypes = {
 export const Lesson = ({name}) => (
 
     <div className="lesson">
-        <h3>{name}</h3>
+        <h5>{name}</h5>
     </div>
 
 )
