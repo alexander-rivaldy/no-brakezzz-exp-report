@@ -54,7 +54,7 @@ const Week3 = () => (
             <HighlightItem name="PO delegate another person to fill in" imageUrl={PO} />
             <HighlightItem name="Second showcase" imageUrl={ShowcaseIcon}/>
             <HighlightItem name="PO surprise visit" imageUrl={PO} />
-            <HighlightItem name="Lanavla weekend broken build" imageUrl={GoCD}/>
+            <HighlightItem name="Lonavala weekend broken build" imageUrl={GoCD}/>
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vTtY0Si6JhzLA9F281QCNKTF7X1U1AKJZn-G4NeFsRiQQjubszv16CuRgHumJPlUJNtW_sQnlOsii2L/embed?start=false&loop=false&delayms=10000">
