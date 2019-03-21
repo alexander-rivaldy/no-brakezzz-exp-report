@@ -60,29 +60,29 @@ export const Discussion = "https://pngimage.net/wp-content/uploads/2018/05/discu
 export const Development = "https://kr.seaicons.com/wp-content/uploads/2015/11/Transport-Under-Computer-icon.png";
 export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d0/Mr._G_%26_W_SSB4.png/revision/latest?cb=20150801074423";
 
-const TeamPictureUrl = "1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM";
-const TeamBowling = "14t1tHnlebNh0hAteA2684XLaokVfaVGR";
-const BusTakeover = "1L0_JKVVLPFAg9fGH6b2e4TwV6Pc0tvKO";
-const BusTakeover2 = "1hATWs2kWYrcZuTDIUcz_blUj51TcNlEd";
-const TeamDinner = "1Vhic04lu8jYbZyMMROFN6nrC_9btRMkB";
-const Lonavala = "1_lg7IUBsYbrEz0V1k7c7GL0AORiYIU3u";
-const TeamUploadImage = "1DxaShzAnqve9fr3QIdwqnpK2u9awxMyH";
-const TeamTattoo = "1tzIx4kJufFqpmlj1WbO_sN-HamxeYqEt";
-const Holi = "1EyVKKcP0vcnt0OxTMlqnb8iaZug3nQCA";
+const TeamPictureUrl = "https://tinyurl.com/no-brakezzz-team-picture";
+const TeamBowling = "https://tinyurl.com/no-brakezzz-bowling";
+const BusTakeover = "https://tinyurl.com/no-brakezzz-bus-takeover";
+const BusTakeover2 = "https://tinyurl.com/no-brakezzz-bus-takeover2";
+const TeamDinner = "https://tinyurl.com/no-brakezzz-team-dinner";
+const Lonavala = "https://tinyurl.com/no-brakezzz-lonavala";
+const TeamUploadImage = "https://tinyurl.com/no-brakezzz-how-many-dev";
+const TeamTattoo = "https://tinyurl.com/no-brakezzz-tattoo";
+const Holi = "https://tinyurl.com/no-brakezzz-holi";
 
 const NoBrakezzzChant = "https://drive.google.com/uc?export=view&id=1LK_AJE0OPGj1SCv1AowBLqV_70YTDKSt";
 
-const ProfileBoard = "1tyv2-4CHCp61v1o7JoHNIkA7yJufRpqf";
-const UserJourneyBoard = "1IVwDrNCyX3F6AwphkiaWmxsjVlnXGu3a";
-const PrioritizationBoard = "1hf_EYYzM7-Sn9Y4xrUMELlbGdB1n2tBQ";
-const ClientCommBoard = "1Q57uezhgfzvRuAfq2YgP1YiI0ZJTLeEf";
-const TechDebtWall = "1WwhgoaUSdRt2A8yrZdqtLZ21E_wXJ4H0";
-const IterationWall = "1Dj3gV1cO40kP5YatKxHV8x6GwGbmns6q";
-const KanbanBoard = "1KcqsAE4AnxhhCp0JFj427eEAUKuPKf7m";
-const SecurityThreatWall = "1zeMQJRBuE0Ut5YPVmp4LxBuvOXW_N-85";
-const InformativeWall = "1-7kYWPYIJSqE9ImZaQYLVPEnZhayXkaW";
-const BugWall = "1eGjM9hoRciiyJSF2Xtpg6nmJ8LlnrmMU";
-const PairingMatrix = "19FCi-bRdlKxgsBDUkNwP4FN4KgMnas-l";
+const ProfileBoard = "https://tinyurl.com/no-brakezzz-profile-board";
+const UserJourneyBoard = "https://tinyurl.com/no-brakezzz-user-journey";
+const PrioritizationBoard = "https://tinyurl.com/no-brakezzz-prioritization-boa";
+const ClientCommBoard = "https://tinyurl.com/no-brakezzz-client-comm";
+const TechDebtWall = "https://tinyurl.com/no-brakezzz-tech-debt";
+const IterationWall = "https://tinyurl.com/no-brakezzz-iteration-wall";
+const KanbanBoard = "https://tinyurl.com/no-brakezzz-kanban-board";
+const SecurityThreatWall = "https://tinyurl.com/no-brakezzz-security-threats";
+const InformativeWall = "https://tinyurl.com/no-brakezzz-informative-wall";
+const BugWall = "https://tinyurl.com/no-brakezzz-bug-wall";
+const PairingMatrix = "https://tinyurl.com/no-brakezzz-pairing-matrix";
 
 export const ImageWithClass = ({classname, url}) => (
     <img className={classname} src={url} />
@@ -131,7 +131,7 @@ export const GalleryNoBrakezzz = () => (
 const GalleryItem = ({name, desc}) => (
 
     <div className="gallery-item">
-        <TeamMemberImage name={name} />
+        <ImageWithClass url={name} />
         <h6>{desc}</h6>
     </div>
 
