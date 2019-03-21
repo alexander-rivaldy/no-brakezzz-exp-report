@@ -41,12 +41,11 @@ const Week2 = () => (
 
         <WeekBanner weekNum={"2"} weekTitle ={"Accelerate all day every day"} />
         <Overview
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like Aldus PageMaker including versions of Lorem Ipsum."
+            content="After our showcase we found out our CI environment was broken. After looking into it, we found out
+            it was broken because it was out of disk space and we fixed it by extending the pipeline script to delete
+            old artifacts. When we finally got this fixed we were able to push our first code to production which was
+            very exciting. Then we found out we had to back up the production DB and we finally found out how and implemented it.
+"
         />
 
         <Highlight>
@@ -87,27 +86,16 @@ const Week2 = () => (
 
             <ShowcaseList name="What went well">
                 <ShowcaseListItem item="Country story got deployed to production"/>
-                <ShowcaseListItem item="This thing went well"/>
-                <ShowcaseListItem item="This thing went well"/>
-                <ShowcaseListItem item="This thing went well"/>
             </ShowcaseList>
 
             <ShowcaseList name="Possible Improvements">
                 <ShowcaseListItem item="Communications with PO was minimal up until the showcase"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-                <ShowcaseListItem item="This is possible improvement"/>
             </ShowcaseList>
 
         </ShowcaseReflection>
 
         <LessonsLearned>
-
             <Lesson name="Build monitor is essential"/>
-            <Lesson name="LESSON 1"/>
-            <Lesson name="LESSON 1"/>
-            <Lesson name="LESSON 1"/>
-
         </LessonsLearned>
 
 

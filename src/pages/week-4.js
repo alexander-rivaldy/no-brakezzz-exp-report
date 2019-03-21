@@ -50,7 +50,7 @@ const Week4 = () => (
         />
 
         <Highlight>
-            <HighlightItem name="ADD HIGLIGHT" />
+            <HighlightItem name="PO demanding all features to be finished" imageUrl={PO} />
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vS95JUd2MeFxITq-uHpMCojRR-0emuuzbQFh09FF31Gzgt553XVys5Bqi1_YRkJ8qJgCTTVcHWdSWrc/embed?start=false&loop=false&delayms=10000">

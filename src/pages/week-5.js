@@ -20,7 +20,7 @@ import {
 import {
     Alex,
     Bryce,
-    GoCD,
+    GoCD, Holi, HoliIcon,
     Jacob, Louise,
     Monitor, Pamela,
     PO,
@@ -41,16 +41,20 @@ const Week5 = () => (
 
         <WeekBanner weekNum={"5"} weekTitle ={"Final (git) push"} />
         <Overview
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like Aldus PageMaker including versions of Lorem Ipsum."
+            content="The final week of our Client Engagement. We had a lot to deliver because the PO expected us to
+            have all of the stories finished that were promised in the inception. Even with all of our hard work we
+            couldn’t manage to finish adding multiple items to the shopping cart and product images. We went into
+            showcase not knowing how the PO would react and at the very end of the showcase the PO received a call
+            from her bosses. We were told we had 5 mins to prepare for a 15 minute demo of our work and as we were
+            scrambling to prepare the demo, the PO surprised us all with cake and told us we didn’t actually have to
+             demo anything. We all had a good laugh about it and celebrated the end of our project.
+"
         />
 
         <Highlight>
-            <HighlightItem name="ADD HIGHLIGHT"  />
+            <HighlightItem name="Staging ENV broke right before showcase" imageUrl={GoCD} />
+            <HighlightItem name="Final Showcase" imageUrl={ShowcaseIcon} />
+            <HighlightItem name="Happy Holi!" imageUrl={HoliIcon} />
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vQ2tHI_iwSoVdoU_p_DlE8I_3Qp4-t6LMCAFmeL-7wbTs8EBqHRe329aS8ho6f--S2X5DpTlVLL89uH/embed?start=false&loop=false&delayms=10000">

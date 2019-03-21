@@ -18,7 +18,7 @@ import {
     WeekBanner
 } from "../components/week-template/week-layout"
 import {
-    Alex,
+    Alex, Bowling,
     Bryce,
     GoCD,
     Jacob,
@@ -41,18 +41,18 @@ const Week3 = () => (
 
         <WeekBanner weekNum={"3"} weekTitle ={"Guess what week it is? Hump week!"} />
         <Overview
-            content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like Aldus PageMaker including versions of Lorem Ipsum."
+            content="Our PO was out of the office for a business trip and we had her coworker as our new PO for this
+            week. We had to learn how to adapt to this new PO because her style and requirements were vastly different
+            from our original PO. This week also featured our team outing to Chang’s plus bowling in Phoenix Mall.
+            After that we got our build monitor working just in time for Jacob to break the build right before the Lonavala Trip.
+"
         />
 
         <Highlight>
             <HighlightItem name="Build Monitor" imageUrl={Monitor} />
             <HighlightItem name="PO delegate another person to fill in" imageUrl={PO} />
-            <HighlightItem name="Second showcase" imageUrl={ShowcaseIcon}/>
+            <HighlightItem name="Showcase 2" imageUrl={ShowcaseIcon}/>
+            <HighlightItem name="Team Outing" imageUrl={Bowling}/>
             <HighlightItem name="PO surprise visit" imageUrl={PO} />
             <HighlightItem name="Lonavala weekend broken build" imageUrl={GoCD}/>
         </Highlight>

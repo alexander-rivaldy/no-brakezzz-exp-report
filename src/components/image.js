@@ -59,6 +59,8 @@ export const Peacock = "https://img.pngio.com/peacock-acrylic-mirror-and-vinyl-d
 export const Discussion = "https://pngimage.net/wp-content/uploads/2018/05/discussion-vector-png.png";
 export const Development = "https://kr.seaicons.com/wp-content/uploads/2015/11/Transport-Under-Computer-icon.png";
 export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d0/Mr._G_%26_W_SSB4.png/revision/latest?cb=20150801074423";
+export const Bowling = "https://www.shareicon.net/data/2016/04/15/750161_game_512x512.png";
+export const HoliIcon = "http://timkosykh.com/wp-content/uploads/2017/05/Color-splash_Illustrations-PorcelainTear-full-13700-455595.png";
 
 const TeamPictureUrl = "https://tinyurl.com/no-brakezzz-team-picture";
 const TeamBowling = "https://tinyurl.com/no-brakezzz-bowling";
