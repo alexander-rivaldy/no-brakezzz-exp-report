@@ -1,7 +1,16 @@
+img {
+    image-orientation: from-image;
+}
+
 
 .gallery-group {
     width: 90%;
     margin: 0 auto;
+}
+
+.gallery-group h1 {
+    font-size: 3.5rem;
+    font-weight: 900;
 }
 
 .gallery-group > div {
@@ -16,3 +25,10 @@
     margin: 15px;
 }
 
+.with-video {
+    margin: 0 auto;
+}
+
+.gallery-item video {
+    margin: 15px;
+}

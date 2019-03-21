@@ -60,14 +60,29 @@ export const Discussion = "https://pngimage.net/wp-content/uploads/2018/05/discu
 export const Development = "https://kr.seaicons.com/wp-content/uploads/2015/11/Transport-Under-Computer-icon.png";
 export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d0/Mr._G_%26_W_SSB4.png/revision/latest?cb=20150801074423";
 
-export const TeamPictureUrl = "1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM";
-export const TeamBowling = "1seIIdeiFFZ6_mgP6yBJihyI5nSAH8Zdo";
-export const BusTakeover = "1L0_JKVVLPFAg9fGH6b2e4TwV6Pc0tvKO";
-export const BusTakeover2 = "1hATWs2kWYrcZuTDIUcz_blUj51TcNlEd";
-export const TeamDinner = "1Vhic04lu8jYbZyMMROFN6nrC_9btRMkB";
-export const Lonavala = "1_lg7IUBsYbrEz0V1k7c7GL0AORiYIU3u";
-export const TeamUploadImage = "1DxaShzAnqve9fr3QIdwqnpK2u9awxMyH";
-export const TeamTattoo = "1tzIx4kJufFqpmlj1WbO_sN-HamxeYqEt";
+const TeamPictureUrl = "1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM";
+const TeamBowling = "14t1tHnlebNh0hAteA2684XLaokVfaVGR";
+const BusTakeover = "1L0_JKVVLPFAg9fGH6b2e4TwV6Pc0tvKO";
+const BusTakeover2 = "1hATWs2kWYrcZuTDIUcz_blUj51TcNlEd";
+const TeamDinner = "1Vhic04lu8jYbZyMMROFN6nrC_9btRMkB";
+const Lonavala = "1_lg7IUBsYbrEz0V1k7c7GL0AORiYIU3u";
+const TeamUploadImage = "1DxaShzAnqve9fr3QIdwqnpK2u9awxMyH";
+const TeamTattoo = "1tzIx4kJufFqpmlj1WbO_sN-HamxeYqEt";
+const Holi = "1EyVKKcP0vcnt0OxTMlqnb8iaZug3nQCA";
+
+const NoBrakezzzChant = "https://drive.google.com/uc?export=view&id=1LK_AJE0OPGj1SCv1AowBLqV_70YTDKSt";
+
+const ProfileBoard = "1tyv2-4CHCp61v1o7JoHNIkA7yJufRpqf";
+const UserJourneyBoard = "1IVwDrNCyX3F6AwphkiaWmxsjVlnXGu3a";
+const PrioritizationBoard = "1hf_EYYzM7-Sn9Y4xrUMELlbGdB1n2tBQ";
+const ClientCommBoard = "1Q57uezhgfzvRuAfq2YgP1YiI0ZJTLeEf";
+const TechDebtWall = "1WwhgoaUSdRt2A8yrZdqtLZ21E_wXJ4H0";
+const IterationWall = "1Dj3gV1cO40kP5YatKxHV8x6GwGbmns6q";
+const KanbanBoard = "1KcqsAE4AnxhhCp0JFj427eEAUKuPKf7m";
+const SecurityThreatWall = "1zeMQJRBuE0Ut5YPVmp4LxBuvOXW_N-85";
+const InformativeWall = "1-7kYWPYIJSqE9ImZaQYLVPEnZhayXkaW";
+const BugWall = "1eGjM9hoRciiyJSF2Xtpg6nmJ8LlnrmMU";
+const PairingMatrix = "19FCi-bRdlKxgsBDUkNwP4FN4KgMnas-l";
 
 export const ImageWithClass = ({classname, url}) => (
     <img className={classname} src={url} />
@@ -83,6 +98,22 @@ TeamMemberImage.propTypes = {
     name: PropTypes.string,
 }
 
+export const GalleryInformationRadiators = () => (
+    <div>
+        <GalleryItem name={ProfileBoard} desc="Profile Board" />
+        <GalleryItem name={UserJourneyBoard} desc="User Journey Board" />
+        <GalleryItem name={PrioritizationBoard} desc="Prioritization Board" />
+        <GalleryItem name={ClientCommBoard} desc="Client Communication Board" />
+        <GalleryItem name={TechDebtWall} desc="Tech Debt Wall" />
+        <GalleryItem name={IterationWall} desc="Iteration Wall" />
+        <GalleryItem name={KanbanBoard} desc="Kanban Board" />
+        <GalleryItem name={SecurityThreatWall} desc="Security Threats" />
+        <GalleryItem name={InformativeWall} desc="Informative Wall" />
+        <GalleryItem name={BugWall} desc="Bug Wall" />
+        <GalleryItem name={PairingMatrix} desc="Pairing Matrix" />
+    </div>
+)
+
 export const GalleryNoBrakezzz = () => (
     <div>
         <GalleryItem name={TeamPictureUrl} desc="Final Showcase" />
@@ -92,6 +123,8 @@ export const GalleryNoBrakezzz = () => (
         <GalleryItem name={Lonavala} desc="Weekend trip at Lonavala" />
         <GalleryItem name={TeamUploadImage} desc="How many devs do we need to upload an image?" />
         <GalleryItem name={TeamTattoo} desc="#TeamTattoo" />
+        <GalleryItem name={Holi} desc="Holi + last day in office" />
+        <GalleryItem name={TeamBowling} desc="Team Bowling" />
     </div>
 )
 
@@ -109,3 +142,22 @@ GalleryItem.propTypes = {
     desc: PropTypes.string,
 }
 
+export const GalleryChant = () => (
+    <GalleryItemVideo name={NoBrakezzzChant} desc="No Brakezzz chant"/>
+)
+
+const GalleryItemVideo = ({name, desc}) => (
+
+    <div className="gallery-item with-video">
+        <video width="400" controls>
+            <source src={name} type="video/mp4"/>
+        </video>
+        <h6>{desc}</h6>
+    </div>
+
+)
+
+GalleryItemVideo.propTypes = {
+    name: PropTypes.string,
+    desc: PropTypes.string,
+}

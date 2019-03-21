@@ -2,15 +2,23 @@ import React from "react"
 
 import Layout from "../components/layout"
 import PropTypes from "prop-types"
-import {GalleryNoBrakezzz} from "../components/image";
+import {GalleryChant, GalleryInformationRadiators, GalleryNoBrakezzz} from "../components/image";
 import "../components/gallery.css";
 
 const Gallery = () => (
     <Layout>
         <GalleryBanner />
 
-        <GalleryGroup name="No Brakezzz">
+        <GalleryGroup name="No Brakezzz Chant">
+            <GalleryChant/>
+        </GalleryGroup>
+
+        <GalleryGroup name="Team Picture">
             <GalleryNoBrakezzz/>
+        </GalleryGroup>
+
+        <GalleryGroup name="Information Radiators">
+            <GalleryInformationRadiators/>
         </GalleryGroup>
 
 
