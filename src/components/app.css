@@ -1,5 +1,6 @@
 main{
     background-color: #e8e8e8;
+    padding-bottom:100px;
 }
 
 .week-panels-container {
@@ -33,7 +34,16 @@ main{
     align-items: center;
     height: 75vh;
     justify-content: flex-start;
-    padding-top: 25vh;
+    padding-top: 15vh;
+}
+
+.home-banner h1 {
+    font-size: 9rem;
+    font-weight: 900;
+}
+
+.home-banner h3 {
+    font-size: 5rem;
 }
 
 .inverse {
