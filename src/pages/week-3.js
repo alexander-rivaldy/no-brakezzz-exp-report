@@ -18,12 +18,14 @@ import {
     LessonsLearned, Lesson
 } from "../components/week-template/week-layout"
 import {
+    Alex,
+    Bryce,
     GoCD,
     Jacob,
-    Louise,
-    Pamela,
+    Louise, Monitor,
+    Pamela, PO,
     Rodney,
-    Sarah,
+    Sarah, ShowcaseIcon,
     Spandan,
     Stivali,
     TeamMemberImage,
@@ -37,7 +39,7 @@ const Week2 = () => (
 
     <Layout>
 
-        <WeekBanner weekNum={"2"} weekTitle ={"Accelerate all day every day"} />
+        <WeekBanner weekNum={"3"} weekTitle ={"Guess what week it is? Hump week!"} />
         <Overview
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -48,30 +50,30 @@ const Week2 = () => (
         />
 
         <Highlight>
-            <HighlightItem name="First Showcase!" />
-            <HighlightItem name="CI ENV broke for the first time" imageUrl={GoCD}/>
-            <HighlightItem name="First production deploy (Friday night)" imageUrl={GoCD}/>
-            <HighlightItem name="Backup production DB" imageUrl={GoCD}/>
+            <HighlightItem name="Build Monitor" imageUrl={Monitor} />
+            <HighlightItem name="PO delegate another person to fill in" imageUrl={PO} />
+            <HighlightItem name="Second showcase" imageUrl={ShowcaseIcon}/>
+            <HighlightItem name="PO surprise visit" imageUrl={PO} />
+            <HighlightItem name="Lanavla weekend broken build" imageUrl={GoCD}/>
         </Highlight>
 
-        <Showcase slideUrl="https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000">
+        <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vTtY0Si6JhzLA9F281QCNKTF7X1U1AKJZn-G4NeFsRiQQjubszv16CuRgHumJPlUJNtW_sQnlOsii2L/embed?start=false&loop=false&delayms=10000">
             <ShowcaseGroup name={FACILITATOR}>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Rodney}/>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Louise}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Jacob}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={SPEAKER}>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Sarah}/>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Jacob}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Bryce}/>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Stivali}/>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Spandan}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Alex}/>
                 <TeamMemberImage classname={ShowcasePeopleClass} name={Trystan}/>
 
             </ShowcaseGroup>
             <ShowcaseGroup name={SCRIBE}>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Pamela}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Sarah}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={OPERATOR}>
-                <TeamMemberImage classname={ShowcasePeopleClass} name={Zoey}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Spandan}/>
             </ShowcaseGroup>
 
         </Showcase>
@@ -96,7 +98,6 @@ const Week2 = () => (
 
         <LessonsLearned>
 
-            <Lesson name="Build monitor is essential"/>
             <Lesson name="LESSON 1"/>
             <Lesson name="LESSON 1"/>
             <Lesson name="LESSON 1"/>

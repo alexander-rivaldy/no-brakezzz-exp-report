@@ -14,8 +14,8 @@ const IndexPage = () => (
         <div className="week-panels-container">
             <WeekPanel weekNum={"0"} weekDescription={"I just haven't met you yet"}/>
             <WeekPanel weekNum={"1"} weekDescription={"No Brakerzzz Assemble!"}/>
-            <WeekPanel weekNum={"2"} weekDescription={"Accelerate all day erry day"}/>
-            <WeekPanel weekNum={"3"} weekDescription={"Oh no, Hump week!"}/>
+            <WeekPanel weekNum={"2"} weekDescription={"Accelerate all day every day"}/>
+            <WeekPanel weekNum={"3"} weekDescription={"Guess what week it is? Hump week!"}/>
             <WeekPanel weekNum={"4"} weekDescription={"The uh-oh moment"}/>
             <WeekPanel weekNum={"5"} weekDescription={"Final acceleration"}/>
         </div>

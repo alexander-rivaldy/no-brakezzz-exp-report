@@ -23,7 +23,7 @@ import {
     Louise,
     Pamela,
     Rodney,
-    Sarah,
+    Sarah, ShowcaseIcon,
     Spandan,
     Stivali,
     TeamMemberImage,
@@ -48,7 +48,7 @@ const Week2 = () => (
         />
 
         <Highlight>
-            <HighlightItem name="First Showcase!" />
+            <HighlightItem name="First Showcase!" imageUrl={ShowcaseIcon} />
             <HighlightItem name="CI ENV broke for the first time" imageUrl={GoCD}/>
             <HighlightItem name="First production deploy (Friday night)" imageUrl={GoCD}/>
             <HighlightItem name="Backup production DB" imageUrl={GoCD}/>
