@@ -15,7 +15,7 @@ import {
 } from "../components/week-template/week-layout"
 import {
     Alex,
-    Bryce,
+    Bryce, Development,
     Jacob,
     Pamela,
     PO,
@@ -44,6 +44,7 @@ const Week4 = () => (
 
         <Highlight>
             <HighlightItem name="PO demanding all features to be finished" imageUrl={PO} />
+            <HighlightItem name="Resolving high effort high pain Tech Debt" imageUrl={Development} />
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vS95JUd2MeFxITq-uHpMCojRR-0emuuzbQFh09FF31Gzgt553XVys5Bqi1_YRkJ8qJgCTTVcHWdSWrc/embed?start=false&loop=false&delayms=10000">

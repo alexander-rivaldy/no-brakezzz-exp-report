@@ -13,8 +13,7 @@ const IndexPage = () => (
         <div className="week-panels-container">
             <WeekPanel weekNum={"0"} weekTitle={"I just haven't met you yet"}
                 weekDescription="
-                    The week No Brakerzzz arrived in Pune. We all had no idea what TWU will bring, what will hit us hard
-                    (Spring, I'm looking at you) and just how much fun it would be.
+                    The week No Brakerzzz arrived in Pune.
                 "
 
             />
@@ -26,12 +25,12 @@ const IndexPage = () => (
             />
             <WeekPanel weekNum={"2"} weekTitle={"Accelerate all day every day"}
                weekDescription="
-                   TEXT
+                   Time to break the pipeline I guess?
                "
             />
             <WeekPanel weekNum={"3"} weekTitle={"The Halfway checkpoint"}
                weekDescription="
-                   TEXT
+                   For some reason we have so many things happening this week.
                "
             />
             <WeekPanel weekNum={"4"} weekTitle={"The uh-oh moment"}
@@ -41,7 +40,7 @@ const IndexPage = () => (
             />
             <WeekPanel weekNum={"5"} weekTitle={"Final acceleration"}
                weekDescription="
-                   TEXT
+                   The bitter-sweet end of ThoughtWorks University 64.
                "
             />
         </div>
@@ -58,11 +57,13 @@ const Banner = () => (
 
 
 const WeekPanel = ({weekNum, weekTitle, weekDescription}) => (
-    <div className="week-panel">
-        <h1>Week {weekNum}</h1>
-        <h4>{weekTitle}</h4>
-        <p>{weekDescription}</p>
-    </div>
+    <a href={"/week-" + weekNum}>
+        <div className="week-panel">
+            <h1>Week {weekNum}</h1>
+            <h4>{weekTitle}</h4>
+            <p>{weekDescription}</p>
+        </div>
+    </a>
 
 )
 

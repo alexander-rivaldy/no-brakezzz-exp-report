@@ -28,7 +28,7 @@ import {
     ShowcaseIcon,
     Spandan,
     Stivali,
-    TeamMemberImage,
+    TeamMemberImage, Toggle,
     Trystan
 } from "../components/image";
 
@@ -51,6 +51,7 @@ const Week3 = () => (
             <HighlightItem name="Build Monitor" imageUrl={Monitor} />
             <HighlightItem name="PO delegate another person to fill in" imageUrl={PO} />
             <HighlightItem name="Showcase 2" imageUrl={ShowcaseIcon}/>
+            <HighlightItem name="Feature Togglz" imageUrl={Toggle}/>
             <HighlightItem name="Daniel's Birthday!" imageUrl={DanielUrl} className="circle"/>
             <HighlightItem name="Team Outing" imageUrl={Bowling}/>
             <HighlightItem name="PO surprise visit" imageUrl={PO} />

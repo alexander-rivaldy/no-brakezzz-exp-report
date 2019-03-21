@@ -61,6 +61,8 @@ export const Development = "https://kr.seaicons.com/wp-content/uploads/2015/11/T
 export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d0/Mr._G_%26_W_SSB4.png/revision/latest?cb=20150801074423";
 export const Bowling = "https://www.shareicon.net/data/2016/04/15/750161_game_512x512.png";
 export const HoliIcon = "http://timkosykh.com/wp-content/uploads/2017/05/Color-splash_Illustrations-PorcelainTear-full-13700-455595.png";
+export const HandoverIcon = "https://static.thenounproject.com/png/366102-200.png";
+export const Toggle = "https://www.togglz.org/images/togglz-logo.png";
 
 export const PamelaUrl = "https://drive.google.com/uc?export=view&id=18i8ORbrf-_wLMLwdTxUr84XSfk9teQ_r";
 export const DanielUrl = "https://drive.google.com/uc?export=view&id=14jG1VTrgRlUzyiaK3Gk_CLNNCSZ-D4wJ";

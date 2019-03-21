@@ -16,7 +16,7 @@ import {
 import {
     Alex,
     Bryce,
-    GoCD,
+    GoCD, HandoverIcon,
     Holi,
     HoliIcon,
     Jacob,
@@ -54,6 +54,7 @@ const Week5 = () => (
         <Highlight>
             <HighlightItem name="Staging ENV broke right before showcase" imageUrl={GoCD} />
             <HighlightItem name="Final Showcase" imageUrl={ShowcaseIcon} />
+            <HighlightItem name="Handover document" imageUrl={HandoverIcon} />
             <HighlightItem name="Pamela's Birthday!" imageUrl={PamelaUrl} className="circle"/>
             <HighlightItem name="Happy Holi!" imageUrl={HoliIcon} />
         </Highlight>

@@ -18,6 +18,13 @@ main{
     margin: 1em;
     border: 1px solid black;
     text-align: center;
+    height: 300px;
+    justify-content: center;
+    transition: 0.5s;
+}
+
+.week-panel:hover {
+    background-color: rgba(183, 191, 188, 0.5);
 }
 
 .home-banner {
@@ -42,4 +49,9 @@ footer {
 
 .circle {
     border-radius: 100%;
+}
+
+a:link, a:visited, a:hover, a:enabled {
+    color: black;
+    text-decoration: none;
 }
