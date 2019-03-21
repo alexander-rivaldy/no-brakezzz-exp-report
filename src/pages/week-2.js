@@ -11,7 +11,7 @@ import {
 } from "../components/week-template/week-layout"
 
 
-const Week1 = () => (
+const Week2 = () => (
 
     <Layout>
 
@@ -79,4 +79,4 @@ const Week1 = () => (
 
 
 
-export default Week1;
+export default Week2;
