@@ -1,7 +1,6 @@
 import PropTypes from "prop-types"
 import React from "react"
 import Nav from "react-bootstrap/Nav";
-import NavDropdown from "react-bootstrap/NavDropdown";
 import Navbar from "react-bootstrap/Navbar";
 
 const NavigationBar = ({ siteTitle }) => (
@@ -12,7 +11,7 @@ const NavigationBar = ({ siteTitle }) => (
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto justify-content-end">
                 <Nav.Link href="/">Home</Nav.Link>
-                <Nav.Link href="#link">Week 0</Nav.Link>
+                <NavigationWeek weekNum={"0"}/>
                 <NavigationWeek weekNum={"1"}/>
                 <NavigationWeek weekNum={"2"}/>
                 <NavigationWeek weekNum={"3"}/>
@@ -24,14 +23,7 @@ const NavigationBar = ({ siteTitle }) => (
 )
 
 export const NavigationWeek = ({weekNum}) => (
-    <NavDropdown title={"Week " + weekNum} id="basic-nav-dropdown">
-        <NavDropdown.Item href={"week-" + weekNum}>Overview</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Highlight</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Showcase</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.4">Lesson Learned</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-    </NavDropdown>
+    <Nav.Link href={"week-" + weekNum}>Week {weekNum}</Nav.Link>
 )
 
 NavigationWeek.propTypes ={

@@ -66,6 +66,10 @@ export const ShowcaseIcon ="https://static.thenounproject.com/png/168681-200.png
 export const PO = "https://www.doitrecruitment.ro/wp-content/uploads/2018/05/product-owner.png";
 export const Monitor = "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/29.Mac-512.png";
 export const Food = "http://cdn.onlinewebfonts.com/svg/img_174839.png";
+export const Peacock = "https://img.pngio.com/peacock-acrylic-mirror-and-vinyl-decal-dezign-with-a-z-black-and-white-peacock-png-265_265.png";
+export const Discussion = "https://pngimage.net/wp-content/uploads/2018/05/discussion-vector-png.png";
+export const Development = "https://kr.seaicons.com/wp-content/uploads/2015/11/Transport-Under-Computer-icon.png";
+export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d0/Mr._G_%26_W_SSB4.png/revision/latest?cb=20150801074423";
 
 export const ImageWithClass = ({classname, url}) => (
     <img className={classname} src={url} />
