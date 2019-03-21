@@ -60,6 +60,15 @@ export const Discussion = "https://pngimage.net/wp-content/uploads/2018/05/discu
 export const Development = "https://kr.seaicons.com/wp-content/uploads/2015/11/Transport-Under-Computer-icon.png";
 export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d0/Mr._G_%26_W_SSB4.png/revision/latest?cb=20150801074423";
 
+export const TeamPictureUrl = "1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM";
+export const TeamBowling = "1seIIdeiFFZ6_mgP6yBJihyI5nSAH8Zdo";
+export const BusTakeover = "1L0_JKVVLPFAg9fGH6b2e4TwV6Pc0tvKO";
+export const BusTakeover2 = "1hATWs2kWYrcZuTDIUcz_blUj51TcNlEd";
+export const TeamDinner = "1Vhic04lu8jYbZyMMROFN6nrC_9btRMkB";
+export const Lonavala = "1_lg7IUBsYbrEz0V1k7c7GL0AORiYIU3u";
+export const TeamUploadImage = "1DxaShzAnqve9fr3QIdwqnpK2u9awxMyH";
+export const TeamTattoo = "1tzIx4kJufFqpmlj1WbO_sN-HamxeYqEt";
+
 export const ImageWithClass = ({classname, url}) => (
     <img className={classname} src={url} />
 )
@@ -72,5 +81,31 @@ ImageWithClass.propTypes = {
 TeamMemberImage.propTypes = {
     classname: PropTypes.string,
     name: PropTypes.string,
+}
+
+export const GalleryNoBrakezzz = () => (
+    <div>
+        <GalleryItem name={TeamPictureUrl} desc="Final Showcase" />
+        <GalleryItem name={TeamDinner} desc="Team Outing: Dinner" />
+        <GalleryItem name={BusTakeover} desc="Taking over a bus" />
+        <GalleryItem name={BusTakeover2} desc="Taking over a bus, again." />
+        <GalleryItem name={Lonavala} desc="Weekend trip at Lonavala" />
+        <GalleryItem name={TeamUploadImage} desc="How many devs do we need to upload an image?" />
+        <GalleryItem name={TeamTattoo} desc="#TeamTattoo" />
+    </div>
+)
+
+const GalleryItem = ({name, desc}) => (
+
+    <div className="gallery-item">
+        <TeamMemberImage name={name} />
+        <h6>{desc}</h6>
+    </div>
+
+)
+
+GalleryItem.propTypes = {
+    name: PropTypes.string,
+    desc: PropTypes.string,
 }
 

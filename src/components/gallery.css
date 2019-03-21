@@ -1,0 +1,18 @@
+
+.gallery-group {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.gallery-group > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.gallery-item {
+    max-width: 20rem;
+    margin: 15px;
+}
+
