@@ -159,6 +159,32 @@ ShowcaseListItem.propTypes = {
     item: PropTypes.String,
 }
 
+export const LessonsLearned = ({children}) => (
+
+    <div className={section}>
+        <h1>Lessons Learned</h1>
+        <div id="lessons-learned">
+            {children}
+        </div>
+    </div>
+
+)
+
+LessonsLearned.propTypes = {
+    children: PropTypes.node.isRequired,
+}
+
+export const Lesson = ({name}) => (
+
+    <div className="lesson">
+        <h3>{name}</h3>
+    </div>
+
+)
+
+Lesson.propTypes = {
+    name: PropTypes.String,
+}
 
 export const FACILITATOR = "Facilitator";
 export const SPEAKER = "Speaker";

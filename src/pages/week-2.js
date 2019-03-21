@@ -7,7 +7,15 @@ import {
     ShowcasePeople,
     ShowcaseGroup,
     FACILITATOR,
-    SPEAKER, SCRIBE, OPERATOR, ShowcaseReflection, ShowcaseList, ShowcaseListItem, Highlight, HighlightItem
+    SPEAKER,
+    SCRIBE,
+    OPERATOR,
+    ShowcaseReflection,
+    ShowcaseList,
+    ShowcaseListItem,
+    Highlight,
+    HighlightItem,
+    LessonsLearned, Lesson
 } from "../components/week-template/week-layout"
 
 
@@ -69,6 +77,15 @@ const Week2 = () => (
             </ShowcaseList>
 
         </ShowcaseReflection>
+
+        <LessonsLearned>
+
+            <Lesson name="LESSON 1"/>
+            <Lesson name="LESSON 1"/>
+            <Lesson name="LESSON 1"/>
+            <Lesson name="LESSON 1"/>
+
+        </LessonsLearned>
 
 
 

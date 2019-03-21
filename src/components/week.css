@@ -37,6 +37,7 @@
 .showcase {
     display:flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .showcase h1 {
@@ -50,7 +51,7 @@
 }
 
 .showcase > div {
-    width: 50%;
+    width: 45%;
 }
 
 .showcase-group {
@@ -65,7 +66,7 @@
 }
 
 .showcase-people {
-    width:100px;
+    width:75px;
     border: 1px solid black;
     border-radius: 100%;
     margin: 5px;
@@ -93,4 +94,22 @@
     width: 17.5rem;
     height: 40vh;
     background-color: rgba(144, 155, 150, 0.5);
+}
+
+#lessons-learned {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lesson {
+    width: 17.5rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(94, 155, 68, 0.5);
+    padding: 20px 10px;
+    margin: 5px;
+
 }
