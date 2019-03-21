@@ -17,6 +17,18 @@ import {
     HighlightItem,
     LessonsLearned, Lesson
 } from "../components/week-template/week-layout"
+import {
+    Jacob,
+    Louise,
+    Pamela,
+    Rodney,
+    Sarah,
+    Spandan,
+    Stivali,
+    TeamMemberImage,
+    Trystan,
+    Zoey
+} from "../components/image";
 
 
 const Week2 = () => (
@@ -41,21 +53,22 @@ const Week2 = () => (
 
         <Showcase slideUrl="https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000">
             <ShowcaseGroup name={FACILITATOR}>
-                <ShowcasePeople name="Rodney"/>
-                <ShowcasePeople name="Louise"/>
+                <TeamMemberImage name={<Rodney />}/>
+                <TeamMemberImage name={<Louise />}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={SPEAKER}>
-                <ShowcasePeople name="Sarah"/>
-                <ShowcasePeople name="Jacob"/>
-                <ShowcasePeople name="Stivali"/>
-                <ShowcasePeople name="Spandan"/>
-                <ShowcasePeople name="Trystan"/>
+                <TeamMemberImage name={<Sarah />}/>
+                <TeamMemberImage name={<Jacob />}/>
+                <TeamMemberImage name={<Stivali />}/>
+                <TeamMemberImage name={<Spandan />}/>
+                <TeamMemberImage name={<Trystan />}/>
+
             </ShowcaseGroup>
             <ShowcaseGroup name={SCRIBE}>
-                <ShowcasePeople name="Pamela"/>
+                <TeamMemberImage name={<Pamela />}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={OPERATOR}>
-                <ShowcasePeople name="Zoey"/>
+                <TeamMemberImage name={<Zoey />}/>
             </ShowcaseGroup>
 
         </Showcase>
