@@ -1,41 +1,41 @@
 import Layout from "../components/layout";
 import React from "react"
 import {
-    WeekBanner,
-    Overview,
-    Showcase,
-    ShowcasePeople,
-    ShowcaseGroup,
     FACILITATOR,
-    SPEAKER,
-    SCRIBE,
-    OPERATOR,
-    ShowcaseReflection,
-    ShowcaseList,
-    ShowcaseListItem,
     Highlight,
     HighlightItem,
-    LessonsLearned, Lesson
+    Lesson,
+    LessonsLearned,
+    OPERATOR,
+    Overview,
+    SCRIBE,
+    Showcase,
+    ShowcaseGroup,
+    ShowcaseList,
+    ShowcaseListItem,
+    ShowcaseReflection,
+    SPEAKER,
+    WeekBanner
 } from "../components/week-template/week-layout"
 import {
     Alex,
     Bryce,
     GoCD,
     Jacob,
-    Louise, Monitor,
-    Pamela, PO,
+    Monitor,
+    PO,
     Rodney,
-    Sarah, ShowcaseIcon,
+    Sarah,
+    ShowcaseIcon,
     Spandan,
     Stivali,
     TeamMemberImage,
-    Trystan,
-    Zoey
+    Trystan
 } from "../components/image";
 
 const ShowcasePeopleClass = "showcase-people";
 
-const Week2 = () => (
+const Week5 = () => (
 
     <Layout>
 
@@ -113,4 +113,4 @@ const Week2 = () => (
 
 
 
-export default Week2;
+export default Week5;
