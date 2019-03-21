@@ -79,3 +79,18 @@
 #showcase-reflection > div {
     width: 50%;
 }
+
+.highlight > div {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.highlight .highlight-item {
+    margin: 10px;
+    width: 17.5rem;
+    height: 40vh;
+    background-color: rgba(144, 155, 150, 0.5);
+}

@@ -7,7 +7,7 @@ import {
     ShowcasePeople,
     ShowcaseGroup,
     FACILITATOR,
-    SPEAKER, SCRIBE, OPERATOR, ShowcaseReflection, ShowcaseList, ShowcaseListItem
+    SPEAKER, SCRIBE, OPERATOR, ShowcaseReflection, ShowcaseList, ShowcaseListItem, Highlight, HighlightItem
 } from "../components/week-template/week-layout"
 
 
@@ -15,7 +15,7 @@ const Week1 = () => (
 
     <Layout>
 
-        <WeekBanner weekNum={"1"} weekTitle ={"No Brakerzzz Assemble!"} />
+        <WeekBanner weekNum={"2"} weekTitle ={"Accelerate all day every day"} />
         <Overview
             content="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
             industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
@@ -24,6 +24,12 @@ const Week1 = () => (
             release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
             software like Aldus PageMaker including versions of Lorem Ipsum."
         />
+
+        <Highlight>
+            <HighlightItem name="First Showcase!"/>
+            <HighlightItem name="CI ENV broke for the first time"/>
+
+        </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000">
             <ShowcaseGroup name={FACILITATOR}>

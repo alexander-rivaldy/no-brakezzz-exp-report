@@ -36,6 +36,38 @@ Overview.propTypes = {
     content: PropTypes.String,
 }
 
+
+
+export const Highlight = ({children}) => (
+    <div className={section}>
+        <div className="highlight">
+            <h1>Highlight</h1>
+            <div>
+                {children}
+            </div>
+        </div>
+
+    </div>
+
+)
+
+Highlight.propTypes = {
+    children: PropTypes.node.isRequired,
+}
+
+
+export const HighlightItem = ({name}) => (
+
+    <div className="highlight-item">
+        <h3>{name}</h3>
+    </div>
+
+)
+
+HighlightItem.propTypes = {
+    name: PropTypes.String,
+}
+
 export const Showcase = ({slideUrl, children}) => (
 
     <div className={section}>
