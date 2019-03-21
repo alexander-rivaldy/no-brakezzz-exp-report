@@ -18,6 +18,7 @@ const NavigationBar = ({ siteTitle }) => (
                 <NavigationWeek weekNum={"3"}/>
                 <NavigationWeek weekNum={"4"}/>
                 <NavigationWeek weekNum={"5"}/>
+                <Nav.Link href="/gallery">Gallery</Nav.Link>
             </Nav>
         </Navbar.Collapse>
     </Navbar>
