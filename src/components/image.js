@@ -1,7 +1,5 @@
 import React from "react"
 import PropTypes from "prop-types";
-import {StaticQuery, graphql} from "gatsby";
-import Img from "gatsby-image";
 
 /*
  * This component is built using `gatsby-image` to automatically serve optimized
@@ -48,7 +46,7 @@ export const Alex = "1OvSZGipGhPrBkdwSGPnBWJAGsiDDbQb9";
 export const Ann = "1q2P29hbN2N_oD3GVTogfuepRJ7PA511h";
 export const Bryce = "1B3674Kbe6oVZTxSkLt39137IKYhkd_ox";
 export const Daniel = "14jG1VTrgRlUzyiaK3Gk_CLNNCSZ-D4wJ";
-export const Jacob = "1Hg1ZKtXstEBzRRCEWfJFeLU3JZJRHiFH-D4wJ";
+export const Jacob = "1Hg1ZKtXstEBzRRCEWfJFeLU3JZJRHiFH";
 export const Louise = "1x7QfsH2SrbUeuGBhcACPPoqwnU9GYcOX";
 export const Pamela = "18i8ORbrf-_wLMLwdTxUr84XSfk9teQ_r";
 export const Rodney = "1Ub6j_VhAebsvj505NwaBTdEuLtL8kLea";

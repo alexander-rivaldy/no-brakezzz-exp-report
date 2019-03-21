@@ -30,6 +30,7 @@ import {
     Zoey
 } from "../components/image";
 
+const ShowcasePeopleClass = "showcase-people";
 
 const Week2 = () => (
 
@@ -53,22 +54,22 @@ const Week2 = () => (
 
         <Showcase slideUrl="https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000">
             <ShowcaseGroup name={FACILITATOR}>
-                <TeamMemberImage name={<Rodney />}/>
-                <TeamMemberImage name={<Louise />}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Rodney}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Louise}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={SPEAKER}>
-                <TeamMemberImage name={<Sarah />}/>
-                <TeamMemberImage name={<Jacob />}/>
-                <TeamMemberImage name={<Stivali />}/>
-                <TeamMemberImage name={<Spandan />}/>
-                <TeamMemberImage name={<Trystan />}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Sarah}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Jacob}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Stivali}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Spandan}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Trystan}/>
 
             </ShowcaseGroup>
             <ShowcaseGroup name={SCRIBE}>
-                <TeamMemberImage name={<Pamela />}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Pamela}/>
             </ShowcaseGroup>
             <ShowcaseGroup name={OPERATOR}>
-                <TeamMemberImage name={<Zoey />}/>
+                <TeamMemberImage classname={ShowcasePeopleClass} name={Zoey}/>
             </ShowcaseGroup>
 
         </Showcase>
