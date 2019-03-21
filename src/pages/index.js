@@ -63,7 +63,7 @@ const Banner = () => (
 const WeekPanel = ({weekNum, weekTitle, weekDescription}) => (
     <div className="week-panel">
         <h1>Week {weekNum}</h1>
-        <h2>{weekTitle}</h2>
+        <h4>{weekTitle}</h4>
         <p>{weekDescription}</p>
     </div>
 
