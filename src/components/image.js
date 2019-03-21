@@ -65,6 +65,7 @@ export const GoCD = "https://miro.medium.com/max/480/0*M85246Uu7jE4CNp1.png";
 export const ShowcaseIcon ="https://static.thenounproject.com/png/168681-200.png";
 export const PO = "https://www.doitrecruitment.ro/wp-content/uploads/2018/05/product-owner.png";
 export const Monitor = "https://cdn4.iconfinder.com/data/icons/48-bubbles/48/29.Mac-512.png";
+export const Food = "http://cdn.onlinewebfonts.com/svg/img_174839.png";
 
 export const ImageWithClass = ({classname, url}) => (
     <img className={classname} src={url} />
