@@ -1,0 +1,35 @@
+
+
+.team-title h2 {
+    align-self: flex-start;
+}
+
+.team-title h1 {
+    align-self: flex-end;
+}
+
+#team-content {
+    margin: 0 auto;
+    width: 80%;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+
+.member-group > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team-member {
+    width: 9rem;
+    margin: 50px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.member-group img {
+    border-radius: 100%;
+}

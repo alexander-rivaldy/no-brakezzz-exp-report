@@ -11,6 +11,7 @@ const NavigationBar = ({ siteTitle }) => (
         <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto justify-content-end">
                 <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/team">Team</Nav.Link>
                 <NavigationWeek weekNum={"0"}/>
                 <NavigationWeek weekNum={"1"}/>
                 <NavigationWeek weekNum={"2"}/>

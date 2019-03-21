@@ -29,19 +29,6 @@ import PropTypes from "prop-types";
 //   />
 // )
 
-export const TeamMember = ({name}) => (
-
-    <div className="team-member">
-        src/images/team/Alex+dev.jpg
-      <img src={"team/" + name +".jpg"} />
-    </div>
-
-)
-
-TeamMember.propTypes = {
-  name: PropTypes.string,
-}
-
 export const Alex = "1OvSZGipGhPrBkdwSGPnBWJAGsiDDbQb9";
 export const Ann = "1q2P29hbN2N_oD3GVTogfuepRJ7PA511h";
 export const Bryce = "1B3674Kbe6oVZTxSkLt39137IKYhkd_ox";
