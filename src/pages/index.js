@@ -12,12 +12,39 @@ const IndexPage = () => (
         <Banner />
 
         <div className="week-panels-container">
-            <WeekPanel weekNum={"0"} weekDescription={"I just haven't met you yet"}/>
-            <WeekPanel weekNum={"1"} weekDescription={"No Brakerzzz Assemble!"}/>
-            <WeekPanel weekNum={"2"} weekDescription={"Accelerate all day every day"}/>
-            <WeekPanel weekNum={"3"} weekDescription={"Guess what week it is? Hump week!"}/>
-            <WeekPanel weekNum={"4"} weekDescription={"The uh-oh moment"}/>
-            <WeekPanel weekNum={"5"} weekDescription={"Final acceleration"}/>
+            <WeekPanel weekNum={"0"} weekTitle={"I just haven't met you yet"}
+                weekDescription="
+                    The week No Brakerzzz arrived in Pune. We all had no idea what TWU will bring, what will hit us hard
+                    (Spring, I'm looking at you) and just how much fun it would be.
+                "
+
+            />
+
+            <WeekPanel weekNum={"1"} weekTitle={"No Brakerzzz Assemble!"}
+               weekDescription="
+                    At this very week, No Brakezzz was born!
+                "
+            />
+            <WeekPanel weekNum={"2"} weekTitle={"Accelerate all day every day"}
+               weekDescription="
+                   TEXT
+               "
+            />
+            <WeekPanel weekNum={"3"} weekTitle={"Guess what week it is? Hump week!"}
+               weekDescription="
+                   TEXT
+               "
+            />
+            <WeekPanel weekNum={"4"} weekTitle={"The uh-oh moment"}
+               weekDescription="
+                    Nope. Just, Nope.
+                "
+            />
+            <WeekPanel weekNum={"5"} weekTitle={"Final acceleration"}
+               weekDescription="
+                   TEXT
+               "
+            />
         </div>
 
 
@@ -33,16 +60,11 @@ const Banner = () => (
 )
 
 
-const WeekPanel = ({weekNum, weekDescription}) => (
+const WeekPanel = ({weekNum, weekTitle, weekDescription}) => (
     <div className="week-panel">
         <h1>Week {weekNum}</h1>
-        <h2>{weekDescription}</h2>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
-            scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
-            into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
-            release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing
-            software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        <h2>{weekTitle}</h2>
+        <p>{weekDescription}</p>
     </div>
 
 )
@@ -50,6 +72,7 @@ const WeekPanel = ({weekNum, weekDescription}) => (
 
 WeekPanel.propTypes = {
     weekNum: PropTypes.string,
+    weekTitle: PropTypes.string,
     weekDescription: PropTypes.string,
 }
 

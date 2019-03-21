@@ -23,7 +23,7 @@ const NavigationBar = ({ siteTitle }) => (
 )
 
 export const NavigationWeek = ({weekNum}) => (
-    <Nav.Link href={"week-" + weekNum}>Week {weekNum}</Nav.Link>
+    <Nav.Link href={"/week-" + weekNum}>Week {weekNum}</Nav.Link>
 )
 
 NavigationWeek.propTypes ={
