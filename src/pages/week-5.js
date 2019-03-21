@@ -4,33 +4,33 @@ import {
     FACILITATOR,
     Highlight,
     HighlightItem,
-    Lesson,
-    LessonsLearned,
     OPERATOR,
-    Overview, RETRO,
+    Overview,
+    RETRO,
     SCRIBE,
     Showcase,
     ShowcaseGroup,
-    ShowcaseList,
-    ShowcaseListItem,
-    ShowcaseReflection,
     SPEAKER,
     WeekBanner
 } from "../components/week-template/week-layout"
 import {
     Alex,
     Bryce,
-    GoCD, Holi, HoliIcon,
-    Jacob, Louise,
-    Monitor, Pamela,
-    PO,
+    GoCD,
+    Holi,
+    HoliIcon,
+    Jacob,
+    Louise,
+    Pamela,
+    PamelaUrl,
     Rodney,
     Sarah,
     ShowcaseIcon,
     Spandan,
     Stivali,
     TeamMemberImage,
-    Trystan, Zoey
+    Trystan,
+    Zoey
 } from "../components/image";
 
 const ShowcasePeopleClass = "showcase-people";
@@ -54,6 +54,7 @@ const Week5 = () => (
         <Highlight>
             <HighlightItem name="Staging ENV broke right before showcase" imageUrl={GoCD} />
             <HighlightItem name="Final Showcase" imageUrl={ShowcaseIcon} />
+            <HighlightItem name="Pamela's Birthday!" imageUrl={PamelaUrl} className="circle"/>
             <HighlightItem name="Happy Holi!" imageUrl={HoliIcon} />
         </Highlight>
 
@@ -85,34 +86,6 @@ const Week5 = () => (
             </ShowcaseGroup>
 
         </Showcase>
-
-        <ShowcaseReflection>
-
-            <ShowcaseList name="What went well">
-                <ShowcaseListItem item="Country story got deployed to production"/>
-                <ShowcaseListItem item="This thing went well"/>
-                <ShowcaseListItem item="This thing went well"/>
-                <ShowcaseListItem item="This thing went well"/>
-            </ShowcaseList>
-
-            <ShowcaseList name="Possible Improvements">
-                <ShowcaseListItem item="Communications with PO was minimal up until the showcase"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-            </ShowcaseList>
-
-        </ShowcaseReflection>
-
-        <LessonsLearned>
-
-            <Lesson name="LESSON 1"/>
-            <Lesson name="LESSON 1"/>
-            <Lesson name="LESSON 1"/>
-
-        </LessonsLearned>
-
-
 
     </Layout>
 

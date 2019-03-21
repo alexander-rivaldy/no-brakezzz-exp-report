@@ -57,10 +57,10 @@ Highlight.propTypes = {
 }
 
 
-export const HighlightItem = ({name, imageUrl}) => (
+export const HighlightItem = ({name, imageUrl, className}) => (
 
     <div className="highlight-item">
-        <ImageWithClass url={imageUrl}/>
+        <ImageWithClass classname={className} url={imageUrl}/>
         <h3>{name}</h3>
     </div>
 
@@ -69,6 +69,7 @@ export const HighlightItem = ({name, imageUrl}) => (
 HighlightItem.propTypes = {
     name: PropTypes.String,
     imageUrl: PropTypes.String,
+    className: PropTypes.String,
 }
 
 export const Showcase = ({slideUrl, children}) => (

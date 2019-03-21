@@ -39,3 +39,7 @@ footer {
     justify-content: center;
     align-items: center;
 }
+
+.circle {
+    border-radius: 100%;
+}

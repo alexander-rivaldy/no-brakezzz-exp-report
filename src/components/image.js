@@ -62,6 +62,9 @@ export const Game = "https://vignette.wikia.nocookie.net/rhythmheaven/images/d/d
 export const Bowling = "https://www.shareicon.net/data/2016/04/15/750161_game_512x512.png";
 export const HoliIcon = "http://timkosykh.com/wp-content/uploads/2017/05/Color-splash_Illustrations-PorcelainTear-full-13700-455595.png";
 
+export const PamelaUrl = "https://drive.google.com/uc?export=view&id=18i8ORbrf-_wLMLwdTxUr84XSfk9teQ_r";
+export const DanielUrl = "https://drive.google.com/uc?export=view&id=14jG1VTrgRlUzyiaK3Gk_CLNNCSZ-D4wJ";
+
 const TeamPictureUrl = "https://tinyurl.com/no-brakezzz-team-picture";
 const TeamBowling = "https://tinyurl.com/no-brakezzz-bowling";
 const BusTakeover = "https://tinyurl.com/no-brakezzz-bus-takeover";

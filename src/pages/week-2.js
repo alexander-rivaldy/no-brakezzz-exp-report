@@ -1,21 +1,17 @@
 import Layout from "../components/layout";
 import React from "react"
 import {
-    WeekBanner,
-    Overview,
-    Showcase,
-    ShowcasePeople,
-    ShowcaseGroup,
     FACILITATOR,
-    SPEAKER,
-    SCRIBE,
-    OPERATOR,
-    ShowcaseReflection,
-    ShowcaseList,
-    ShowcaseListItem,
     Highlight,
     HighlightItem,
-    LessonsLearned, Lesson, RETRO
+    OPERATOR,
+    Overview,
+    RETRO,
+    SCRIBE,
+    Showcase,
+    ShowcaseGroup,
+    SPEAKER,
+    WeekBanner
 } from "../components/week-template/week-layout"
 import {
     Ann,
@@ -25,7 +21,8 @@ import {
     Louise,
     Pamela,
     Rodney,
-    Sarah, ShowcaseIcon,
+    Sarah,
+    ShowcaseIcon,
     Spandan,
     Stivali,
     TeamMemberImage,
@@ -82,21 +79,21 @@ const Week2 = () => (
 
         </Showcase>
 
-        <ShowcaseReflection>
+        {/*<ShowcaseReflection>*/}
 
-            <ShowcaseList name="What went well">
-                <ShowcaseListItem item="Country story got deployed to production"/>
-            </ShowcaseList>
+            {/*<ShowcaseList name="What went well">*/}
+                {/*<ShowcaseListItem item="Country story got deployed to production"/>*/}
+            {/*</ShowcaseList>*/}
 
-            <ShowcaseList name="Possible Improvements">
-                <ShowcaseListItem item="Communications with PO was minimal up until the showcase"/>
-            </ShowcaseList>
+            {/*<ShowcaseList name="Possible Improvements">*/}
+                {/*<ShowcaseListItem item="Communications with PO was minimal up until the showcase"/>*/}
+            {/*</ShowcaseList>*/}
 
-        </ShowcaseReflection>
+        {/*</ShowcaseReflection>*/}
 
-        <LessonsLearned>
-            <Lesson name="Build monitor is essential"/>
-        </LessonsLearned>
+        {/*<LessonsLearned>*/}
+            {/*<Lesson name="Build monitor is essential"/>*/}
+        {/*</LessonsLearned>*/}
 
 
 

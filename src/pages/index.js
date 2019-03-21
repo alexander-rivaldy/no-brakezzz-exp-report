@@ -29,7 +29,7 @@ const IndexPage = () => (
                    TEXT
                "
             />
-            <WeekPanel weekNum={"3"} weekTitle={"Guess what week it is? Hump week!"}
+            <WeekPanel weekNum={"3"} weekTitle={"The Halfway checkpoint"}
                weekDescription="
                    TEXT
                "

@@ -1,16 +1,6 @@
 import Layout from "../components/layout";
 import React from "react"
-import {
-    Highlight,
-    HighlightItem,
-    Lesson,
-    LessonsLearned,
-    Overview,
-    ShowcaseList,
-    ShowcaseListItem,
-    ShowcaseReflection,
-    WeekBanner
-} from "../components/week-template/week-layout"
+import {Highlight, HighlightItem, Overview, WeekBanner} from "../components/week-template/week-layout"
 import {Development, Discussion, Game, Peacock} from "../components/image";
 
 const Week2 = () => (
@@ -31,34 +21,6 @@ const Week2 = () => (
             <HighlightItem name="Gaming Night" imageUrl={Game}/>
             <HighlightItem name="First feature development" imageUrl={Development}/>
         </Highlight>
-
-        <ShowcaseReflection>
-
-            <ShowcaseList name="What went well">
-                <ShowcaseListItem item="Country story got deployed to production"/>
-                <ShowcaseListItem item="This thing went well"/>
-                <ShowcaseListItem item="This thing went well"/>
-                <ShowcaseListItem item="This thing went well"/>
-            </ShowcaseList>
-
-            <ShowcaseList name="Possible Improvements">
-                <ShowcaseListItem item="Communications with PO was minimal up until the showcase"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-                <ShowcaseListItem item="This is possible improvement"/>
-            </ShowcaseList>
-
-        </ShowcaseReflection>
-
-        <LessonsLearned>
-
-            <Lesson name="Build monitor is essential"/>
-            <Lesson name="LESSON 1"/>
-            <Lesson name="LESSON 1"/>
-            <Lesson name="LESSON 1"/>
-
-        </LessonsLearned>
-
 
 
     </Layout>
