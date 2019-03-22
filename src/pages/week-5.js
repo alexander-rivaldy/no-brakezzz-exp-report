@@ -22,7 +22,7 @@ import {
     Jacob,
     Louise,
     Pamela,
-    PamelaUrl,
+    PamelaUrl, Poison,
     Rodney,
     Sarah,
     ShowcaseIcon,
@@ -57,6 +57,7 @@ const Week5 = () => (
             <HighlightItem name="Handover document" imageUrl={HandoverIcon} />
             <HighlightItem name="Pamela's Birthday!" imageUrl={PamelaUrl} className="circle"/>
             <HighlightItem name="Happy Holi!" imageUrl={HoliIcon} />
+            <HighlightItem name="Mass Food Poisoning" imageUrl={Poison} />
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vQ2tHI_iwSoVdoU_p_DlE8I_3Qp4-t6LMCAFmeL-7wbTs8EBqHRe329aS8ho6f--S2X5DpTlVLL89uH/embed?start=false&loop=false&delayms=10000">
