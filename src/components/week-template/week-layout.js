@@ -12,6 +12,15 @@ export const Weeks = [
         path: "/week-0",
         weekTitle: "I just haven't met you yet",
         weekSummary: "The week No Brakerzzz arrived in Pune.",
+    },
+    {
+        weekNum: 1,
+        path: "/week-1",
+        weekTitle: "No Brakerzzz Assemble",
+        weekSummary: "At this very week, No Brakezzz was born!",
+        weekDescription: "The first thing we did after we assembled as a team, and huddled to come up with a name, was to " +
+            "meet the Product Owner. That was the moment we were introduced to FreeWheelers as well as our focus for " +
+            "the first iteration, Country story.",
         highlights: [
             {
                 name: "Team assemble: Peacock!",
@@ -30,12 +39,6 @@ export const Weeks = [
                 imageUrl: Development
             }
         ]
-    },
-    {
-        weekNum: 1,
-        path: "/week-1",
-        weekTitle: "No Brakerzzz Assemble",
-        weekSummary: "At this very week, No Brakezzz was born!"
     },
     {
         weekNum: 2,
@@ -88,6 +91,50 @@ WeekPanel.propTypes = {
     week: PropTypes.node,
 }
 
+export const WeekHeader = ({weekNum}) => {
+    let header = [];
+    let week = Weeks[weekNum];
+
+    header.push( <NewBanner week={week}/> )
+    header.push( <NewOverview week={week}/> )
+
+    return header;
+
+}
+
+WeekHeader.propTypes = {
+    weekNum: PropTypes.integers,
+}
+
+const NewBanner = ({week}) => (
+    <div className="home-banner week-banner">
+        <div className="week-banner-title-container">
+            <h1>Week {week.weekNum}</h1>
+            <h2>{week.weekTitle}</h2>
+        </div>
+    </div>
+)
+
+
+NewBanner.propTypes = {
+    week: PropTypes.node,
+}
+
+const NewOverview = ({week}) => (
+
+    <div className={section}>
+        <div className="overview">
+            <h1>Overview</h1>
+            <p>{week.weekDescription}</p>
+        </div>
+    </div>
+
+)
+
+NewOverview.propTypes = {
+    week: PropTypes.node,
+}
+
 export const WeekBanner = ({ weekNum, weekTitle }) => (
 
     <div className="home-banner week-banner">
@@ -118,6 +165,39 @@ export const Overview = ({content}) => (
 Overview.propTypes = {
     content: PropTypes.String,
 }
+
+export const Highlights = ({weekNum}) => {
+    let items = [];
+    let highlights = Weeks[weekNum].highlights;
+
+    for(let index = 0; index < highlights.length; index++) {
+        items.push( <OneHighlightItem item={highlights[index]} /> );
+    }
+
+
+
+    return items;
+}
+
+Highlights.propTypes = {
+    weekNum: PropTypes.integers,
+}
+
+const OneHighlightItem = ({item}) => (
+    <div className="highlight-item">
+        <ImageWithClass url={item.imageUrl}/>
+        <h3>{item.name}</h3>
+    </div>
+)
+
+OneHighlightItem.propTypes = {
+    item: PropTypes.node,
+    className: PropTypes.String,
+}
+
+
+
+
 
 
 
