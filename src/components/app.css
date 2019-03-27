@@ -65,3 +65,27 @@ a:link, a:visited, a:hover, a:enabled {
     color: black;
     text-decoration: none;
 }
+
+@media screen and (max-width: 850px) {
+    .home-banner {
+        height: auto;
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+        padding-left: 10px;
+    }
+
+    .home-banner h1 {
+        font-size: 2.9rem;
+        font-weight: 900;
+    }
+
+    .home-banner h3 {
+        font-size: 2rem;
+    }
+
+    .week-panel {
+        width: 90vw;
+        padding: 10px;
+    }
+
+}
