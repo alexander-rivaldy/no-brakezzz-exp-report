@@ -2,38 +2,62 @@
 import React from "react"
 import PropTypes from "prop-types"
 import "../week.css"
-import {ImageWithClass} from "../image";
+import {Development, Discussion, Game, ImageWithClass, Peacock} from "../image";
 
 const section = "section";
 
 export const Weeks = [
     {
         weekNum: 0,
+        path: "/week-0",
         weekTitle: "I just haven't met you yet",
-        weekSummary: "The week No Brakerzzz arrived in Pune."
+        weekSummary: "The week No Brakerzzz arrived in Pune.",
+        highlights: [
+            {
+                name: "Team assemble: Peacock!",
+                imageUrl: Peacock
+            },
+            {
+                name: "Coming up with team name",
+                imageUrl: Discussion
+            },
+            {
+                name: "Gaming Night",
+                imageUrl: Game
+            },
+            {
+                name: "First feature development",
+                imageUrl: Development
+            }
+        ]
     },
     {
         weekNum: 1,
+        path: "/week-1",
         weekTitle: "No Brakerzzz Assemble",
         weekSummary: "At this very week, No Brakezzz was born!"
     },
     {
         weekNum: 2,
+        path: "/week-2",
         weekTitle: "Accelerate all day every day",
         weekSummary: "Time to break the pipeline I guess?"
     },
     {
         weekNum: 3,
+        path: "/week-3",
         weekTitle: "The Halfway checkpoint",
         weekSummary: "For some reason we have so many things happening this week"
     },
     {
         weekNum: 4,
+        path: "/week-4",
         weekTitle: "The uh-oh moment",
         weekSummary: "Nope. Just, Nope."
     },
     {
         weekNum: 5,
+        path: "/week-5",
         weekTitle: "Final acceleration",
         weekSummary: "The bitter-sweet end of ThoughtWorks University 64"
     }
