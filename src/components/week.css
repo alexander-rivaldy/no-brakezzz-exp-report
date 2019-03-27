@@ -67,6 +67,7 @@
 
 .showcase-people {
     width:75px;
+    height: 75px;
     border: 1px solid black;
     border-radius: 100%;
     margin: 5px;
@@ -75,6 +76,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .showcase-people img {
@@ -83,7 +85,6 @@
 
 .showcase-people img:after {
     content: attr(alt);
-    font-size: 10000px;
     color: rgb(100, 100, 100);
     display: flex;
     justify-content: center;
