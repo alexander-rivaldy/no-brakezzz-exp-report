@@ -129,3 +129,32 @@
     margin: 5px;
 
 }
+
+
+@media screen and (max-width: 850px) {
+    .week-banner {
+        padding-bottom:10vh;
+        height: auto;
+    }
+
+    .week-banner-title-container h1 {
+        font-size: 5rem;
+    }
+
+    .week-banner-title-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .section {
+        padding: 2rem 1.5rem;
+    }
+
+    .showcase {
+        flex-direction: column;
+    }
+
+    .showcase > div {
+        width: 100%;
+    }
+
+}
