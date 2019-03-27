@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 const NavigationBar = ({ siteTitle }) => (
 
-    <Navbar pullRight bg="dark" expand="lg">
+    <Navbar pullRight bg="dark" expand="lg" variant="dark">
         <Navbar.Brand href="/">{siteTitle}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
