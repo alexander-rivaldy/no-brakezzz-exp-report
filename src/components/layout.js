@@ -28,7 +28,17 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <NavigationBar siteTitle={data.site.siteMetadata.title} />
+          {/*Google analytics tag*/}
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137045436-1"></script>
+          <script>
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'UA-137045436-1');
+          </script>
+
+          <NavigationBar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
             margin: `0 auto`,
