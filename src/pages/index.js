@@ -3,9 +3,11 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PropTypes from "prop-types"
+import ReactGA from 'react-ga';
 
 const IndexPage = () => (
     <Layout>
+        {ReactGA.pageview('/')}
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
 
         <Banner />
