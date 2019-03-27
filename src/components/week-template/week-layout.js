@@ -3,21 +3,28 @@ import React from "react"
 import PropTypes from "prop-types"
 import "../week.css"
 import {
-    Bowling,
+    Alex,
+    Ann,
+    Bowling, Bryce, Daniel,
     DanielUrl,
     Development,
     Discussion, Food,
     Game,
     GoCD, HandoverIcon, HoliIcon,
-    ImageWithClass,
-    Monitor, PamelaUrl,
+    ImageWithClass, Jacob, Louise,
+    Monitor, Pamela, PamelaUrl,
     Peacock,
-    PO, Poison,
-    ShowcaseIcon,
-    Toggle
+    PO, Poison, Rodney, Sarah,
+    ShowcaseIcon, Spandan, Stivali, TeamMemberImage,
+    Toggle, Trystan, Zoey
 } from "../image";
 
 const section = "section";
+export const FACILITATOR = "Facilitator";
+export const SPEAKER = "Speaker";
+export const SCRIBE = "Scribe";
+export const OPERATOR = "Operator";
+export const RETRO = "Retro Lead";
 
 export const Weeks = [
     {
@@ -94,7 +101,22 @@ export const Weeks = [
                 name: "Backup production DB",
                 imageUrl: GoCD
             }
-        ]
+        ],
+        showcaseFacilitator: [
+            Rodney, Louise
+        ],
+        showcaseSpeaker: [
+            Sarah, Jacob, Stivali, Spandan, Trystan
+        ],
+        showcaseScribe: Pamela,
+        showcaseOperator: [
+            Zoey
+        ],
+        showcaseRetro: [
+            Ann, Daniel
+        ],
+        slideUrl: "https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000"
+
     },
     {
         weekNum: 3,
@@ -138,7 +160,21 @@ export const Weeks = [
                 name: "Lonavala weekend broken build",
                 imageUrl: GoCD
             }
-        ]
+        ],
+        showcaseFacilitator: [
+            Rodney, Jacob
+        ],
+        showcaseSpeaker: [
+            Bryce, Stivali, Alex, Trystan
+        ],
+        showcaseScribe: Sarah,
+        showcaseOperator: [
+            Spandan
+        ],
+        showcaseRetro: [
+            Sarah, Pamela
+        ],
+        slideUrl: "https://docs.google.com/presentation/d/e/2PACX-1vTtY0Si6JhzLA9F281QCNKTF7X1U1AKJZn-G4NeFsRiQQjubszv16CuRgHumJPlUJNtW_sQnlOsii2L/embed?start=false&loop=false&delayms=10000"
     },
     {
         weekNum: 4,
@@ -159,7 +195,21 @@ export const Weeks = [
                 name: "Resolving high effort high pain Tech Debt",
                 imageUrl: Development
             }
-        ]
+        ],
+        showcaseFacilitator: [
+            Bryce, Alex
+        ],
+        showcaseSpeaker: [
+            Sarah, Bryce, Pamela, Zoey, Spandan, Trystan
+        ],
+        showcaseScribe: Stivali,
+        showcaseOperator: [
+            Jacob
+        ],
+        showcaseRetro: [
+            Trystan, Stivali
+        ],
+        slideUrl:"https://docs.google.com/presentation/d/e/2PACX-1vS95JUd2MeFxITq-uHpMCojRR-0emuuzbQFh09FF31Gzgt553XVys5Bqi1_YRkJ8qJgCTTVcHWdSWrc/embed?start=false&loop=false&delayms=10000"
     },
     {
         weekNum: 5,
@@ -198,7 +248,21 @@ export const Weeks = [
                 name: "Mass Food Poisoning",
                 imageUrl: Poison
             }
-        ]
+        ],
+        showcaseFacilitator: [
+            Rodney
+        ],
+        showcaseSpeaker: [
+            Alex, Bryce, Jacob, Louise, Pamela, Sarah, Spandan, Stivali, Trystan, Zoey
+        ],
+        showcaseScribe: Rodney,
+        showcaseOperator: [
+            Spandan, Stivali
+        ],
+        showcaseRetro: [
+            "Tito"
+        ],
+        slideUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQ2tHI_iwSoVdoU_p_DlE8I_3Qp4-t6LMCAFmeL-7wbTs8EBqHRe329aS8ho6f--S2X5DpTlVLL89uH/embed?start=false&loop=false&delayms=10000"
     }
 ];
 
@@ -324,9 +388,73 @@ Highlight.propTypes = {
     children: PropTypes.node.isRequired,
 }
 
+const ShowcasePeopleClass = "showcase-people";
 
-export const Showcase = ({slideUrl, children}) => (
+export const AllShowcase = ({weekNum}) => {
+    let showcase = [];
+    let people = [];
+    let facilitators = Weeks[weekNum].showcaseFacilitator;
+    let speakers = Weeks[weekNum].showcaseSpeaker;
+    let scribe = Weeks[weekNum].showcaseScribe;
+    let operators = Weeks[weekNum].showcaseOperator;
+    let retro = Weeks[weekNum].showcaseRetro;
 
+    people.push(facilitators.map((item, key) =>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+    ))
+    showcase.push(
+        <ShowcaseGroup name={FACILITATOR}>
+            {people}
+        </ShowcaseGroup>
+    )
+
+    people = [];
+
+    people.push(speakers.map((item, key) =>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+    ))
+    showcase.push(
+        <ShowcaseGroup name={SPEAKER}>
+            {people}
+        </ShowcaseGroup>
+    )
+
+    showcase.push(
+        <ShowcaseGroup name={SCRIBE}>
+            <TeamMemberImage classname={ShowcasePeopleClass} name={scribe}/>
+        </ShowcaseGroup>
+    )
+
+    people = [];
+
+    people.push(operators.map((item, key) =>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+    ))
+    showcase.push(
+        <ShowcaseGroup name={OPERATOR}>
+            {people}
+        </ShowcaseGroup>
+    )
+
+    people = [];
+
+    people.push(retro.map((item, key) =>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+    ))
+    showcase.push(
+        <ShowcaseGroup name={RETRO}>
+            {people}
+        </ShowcaseGroup>
+    )
+
+    return <ShowcaseLayout slideUrl={Weeks[weekNum].slideUrl}>{showcase}</ShowcaseLayout>;
+}
+
+AllShowcase.propTypes = {
+    weekNum: PropTypes.integers,
+}
+
+const ShowcaseLayout = ({slideUrl, children}) => (
     <div className={section}>
         <h1>Showcase</h1>
         <div className="showcase">
@@ -343,9 +471,9 @@ export const Showcase = ({slideUrl, children}) => (
         </div>
 
     </div>
-
 )
-Showcase.propTypes = {
+
+ShowcaseLayout.propTypes = {
     slideUrl: PropTypes.String,
     children: PropTypes.node.isRequired,
 }
@@ -362,18 +490,3 @@ ShowcaseGroup.propTypes = {
     name: PropTypes.String,
     children: PropTypes.node.isRequired,
 }
-
-
-export const ShowcasePeople = ({name}) => (
-    <img className="showcase-people" src={"images/team/" + name + ".jpg"}/>
-)
-
-ShowcasePeople.propTypes = {
-    name: PropTypes.String,
-}
-
-export const FACILITATOR = "Facilitator";
-export const SPEAKER = "Speaker";
-export const SCRIBE = "Scribe";
-export const OPERATOR = "Operator";
-export const RETRO = "Retro Lead";
