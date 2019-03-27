@@ -46,7 +46,9 @@ export const Zoey = "18oY3r8VMUGck1xbhfejyCA5F9jS5dDNY";
 export const TeamPicture = "1hd4URizMI_YqLr5qebjtI_q9_mIAM-UM";
 
 export const TeamMemberImage = ({classname, name}) => (
- <img className={classname} src={"https://drive.google.com/uc?export=view&id="+name}/>
+    <div className={classname}>
+        <img src={"https://drive.google.com/uc?export=view&id="+name} alt={name}/>
+    </div>
 )
 
 
