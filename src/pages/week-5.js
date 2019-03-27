@@ -3,29 +3,24 @@ import React from "react"
 import {
     FACILITATOR,
     Highlight,
-    HighlightItem,
+    Highlights,
     OPERATOR,
-    Overview,
     RETRO,
     SCRIBE,
     Showcase,
     ShowcaseGroup,
     SPEAKER,
-    WeekBanner
+    WeekHeader
 } from "../components/week-template/week-layout"
 import {
     Alex,
     Bryce,
-    GoCD, HandoverIcon,
     Holi,
-    HoliIcon,
     Jacob,
     Louise,
     Pamela,
-    PamelaUrl, Poison,
     Rodney,
     Sarah,
-    ShowcaseIcon,
     Spandan,
     Stivali,
     TeamMemberImage,
@@ -35,29 +30,16 @@ import {
 
 const ShowcasePeopleClass = "showcase-people";
 
+const WEEKNUM = 5;
+
 const Week5 = () => (
 
     <Layout>
 
-        <WeekBanner weekNum={"5"} weekTitle ={"Final (git) push"} />
-        <Overview
-            content="The final week of our Client Engagement. We had a lot to deliver because the PO expected us to
-            have all of the stories finished that were promised in the inception. Even with all of our hard work we
-            couldn’t manage to finish adding multiple items to the shopping cart and product images. We went into
-            showcase not knowing how the PO would react and at the very end of the showcase the PO received a call
-            from her bosses. We were told we had 5 mins to prepare for a 15 minute demo of our work and as we were
-            scrambling to prepare the demo, the PO surprised us all with cake and told us we didn’t actually have to
-             demo anything. We all had a good laugh about it and celebrated the end of our project.
-"
-        />
+        <WeekHeader weekNum={WEEKNUM}/>
 
         <Highlight>
-            <HighlightItem name="Staging ENV broke right before showcase" imageUrl={GoCD} />
-            <HighlightItem name="Final Showcase" imageUrl={ShowcaseIcon} />
-            <HighlightItem name="Handover document" imageUrl={HandoverIcon} />
-            <HighlightItem name="Pamela's Birthday!" imageUrl={PamelaUrl} className="circle"/>
-            <HighlightItem name="Happy Holi!" imageUrl={HoliIcon} />
-            <HighlightItem name="Mass Food Poisoning" imageUrl={Poison} />
+            <Highlights weekNum={WEEKNUM}/>
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vQ2tHI_iwSoVdoU_p_DlE8I_3Qp4-t6LMCAFmeL-7wbTs8EBqHRe329aS8ho6f--S2X5DpTlVLL89uH/embed?start=false&loop=false&delayms=10000">

@@ -3,48 +3,29 @@ import React from "react"
 import {
     FACILITATOR,
     Highlight,
-    HighlightItem,
+    Highlights,
     OPERATOR,
-    Overview,
     RETRO,
     SCRIBE,
     Showcase,
     ShowcaseGroup,
     SPEAKER,
-    WeekBanner
+    WeekHeader
 } from "../components/week-template/week-layout"
-import {
-    Alex,
-    Bryce, Development,
-    Jacob,
-    Pamela,
-    PO,
-    Sarah,
-    Spandan,
-    Stivali,
-    TeamMemberImage,
-    Trystan,
-    Zoey
-} from "../components/image";
+import {Alex, Bryce, Jacob, Pamela, Sarah, Spandan, Stivali, TeamMemberImage, Trystan, Zoey} from "../components/image";
 
 const ShowcasePeopleClass = "showcase-people";
+
+const WEEKNUM = 4;
 
 const Week4 = () => (
 
     <Layout>
 
-        <WeekBanner weekNum={"4"} weekTitle ={"The uh-oh moment"} />
-        <Overview
-            content="At this stage of Client Engagement, we thought that everything has been going well based on the
-            PO’s reacting during showcases. We also had good internal team communication, enforcing our initial
-            thinking even more. That vision was quickly shattered by an email from the PO on Friday mentioning that
-            she wanted all features to be finished by the next showcase. At that point, we haven’t kicked off the See
-            Product Images story yet, and our email reply wasn’t the best too. Uh-oh."
-        />
+        <WeekHeader weekNum={WEEKNUM}/>
 
         <Highlight>
-            <HighlightItem name="PO demanding all features to be finished" imageUrl={PO} />
-            <HighlightItem name="Resolving high effort high pain Tech Debt" imageUrl={Development} />
+            <Highlights weekNum={WEEKNUM}/>
         </Highlight>
 
         <Showcase slideUrl="https://docs.google.com/presentation/d/e/2PACX-1vS95JUd2MeFxITq-uHpMCojRR-0emuuzbQFh09FF31Gzgt553XVys5Bqi1_YRkJ8qJgCTTVcHWdSWrc/embed?start=false&loop=false&delayms=10000">
