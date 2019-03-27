@@ -13,7 +13,6 @@ import NavigationBar from "./navigationBar"
 import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./app.css"
-import ReactGA from 'react-ga';
 
 
 const Layout = ({ children }) => (
@@ -29,7 +28,6 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-          {initializeReactGA()}
           <NavigationBar siteTitle={data.site.siteMetadata.title} />
         <div
           style={{
@@ -49,11 +47,6 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
-
-
-function initializeReactGA() {
-    ReactGA.initialize('UA-137045436-1');
 }
 
 

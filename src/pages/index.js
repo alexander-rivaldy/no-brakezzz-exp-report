@@ -2,7 +2,6 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import ReactGA from 'react-ga';
 import {AllWeekPanels} from "../components/week-template/week-layout";
 
 
@@ -10,7 +9,6 @@ import {AllWeekPanels} from "../components/week-template/week-layout";
 
 const IndexPage = () => (
     <Layout>
-        {ReactGA.pageview('/')}
         <SEO title="Home" keywords={[`gatsby`, `application`, `react`]}/>
 
         <Banner />
