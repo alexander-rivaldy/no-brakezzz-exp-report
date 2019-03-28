@@ -101,7 +101,9 @@ export const Weeks = [
             NoBrakezzz.sarah, NoBrakezzz.jacob, NoBrakezzz.stivali, NoBrakezzz.spandan,
             NoBrakezzz.trystan
         ],
-        showcaseScribe: NoBrakezzz.pamela,
+        showcaseScribe: [
+            NoBrakezzz.pamela
+        ],
         showcaseOperator: [
             NoBrakezzz.zoey
         ],
@@ -160,7 +162,9 @@ export const Weeks = [
         showcaseSpeaker: [
             NoBrakezzz.bryce, NoBrakezzz.stivali, NoBrakezzz.alex, NoBrakezzz.trystan
         ],
-        showcaseScribe: NoBrakezzz.sarah,
+        showcaseScribe: [
+            NoBrakezzz.sarah
+        ],
         showcaseOperator: [
             NoBrakezzz.spandan
         ],
@@ -196,7 +200,9 @@ export const Weeks = [
             NoBrakezzz.sarah, NoBrakezzz.bryce, NoBrakezzz.pamela,
             NoBrakezzz.zoey, NoBrakezzz.spandan, NoBrakezzz.trystan
         ],
-        showcaseScribe: NoBrakezzz.stivali,
+        showcaseScribe: [
+            NoBrakezzz.stivali
+        ],
         showcaseOperator: [
             NoBrakezzz.jacob
         ],
@@ -251,7 +257,9 @@ export const Weeks = [
             NoBrakezzz.pamela, NoBrakezzz.sarah, NoBrakezzz.spandan, NoBrakezzz.stivali,
             NoBrakezzz.trystan, NoBrakezzz.zoey
         ],
-        showcaseScribe: NoBrakezzz.rodney,
+        showcaseScribe: [
+            NoBrakezzz.rodney
+        ],
         showcaseOperator: [
             NoBrakezzz.spandan, NoBrakezzz.stivali
         ],
