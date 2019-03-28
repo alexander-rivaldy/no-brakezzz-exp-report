@@ -1,28 +1,8 @@
 import Layout from "../components/layout";
 import React from "react"
-import {
-    Alex,
-    Ann,
-    Bryce,
-    Daniel,
-    Jacob,
-    Louise,
-    Pamela,
-    Rodney,
-    Sarah,
-    Spandan,
-    Stivali,
-    Trystan,
-    Zoey
-} from "../components/image";
 
 import "../components/team/team.css"
-import {AllMember, Member, MemberGroup} from "../components/team/team-component";
-
-
-const DEV = "Developer";
-const XD = "Experience Designer";
-const BA = "Business Analyst";
+import {AllMember} from "../components/team/team-component";
 
 const Team = () => (
 
