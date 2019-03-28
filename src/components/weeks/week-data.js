@@ -269,3 +269,5 @@ export const Weeks = [
         slideUrl: "https://docs.google.com/presentation/d/e/2PACX-1vQ2tHI_iwSoVdoU_p_DlE8I_3Qp4-t6LMCAFmeL-7wbTs8EBqHRe329aS8ho6f--S2X5DpTlVLL89uH/embed?start=false&loop=false&delayms=10000"
     }
 ];
+
+export default Weeks;
