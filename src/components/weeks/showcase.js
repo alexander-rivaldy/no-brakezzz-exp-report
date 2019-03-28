@@ -60,30 +60,23 @@ ShowcaseLayout.propTypes = {
 }
 
 function showcaseGroupContructor(title, items) {
-    const element = [];
     const people = [];
 
-    people.push(items.map((item, key) =>
+    people.push(items.map((item) =>
         item.image
             ?
-            <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item.image}/>
+            <TeamMemberImage classname={ShowcasePeopleClass} name={item.image}/>
             :
-            <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+            <TeamMemberImage classname={ShowcasePeopleClass} name={item}/>
 
     ));
 
-    element.push(
-        <ShowcaseGroup name={title}>
-            {people}
-        </ShowcaseGroup>
-    );
-
-    return element;
+    return <ShowcaseGroup name={title}> {people} </ShowcaseGroup>;
 
 }
 
 
-export const ShowcaseGroup = ({name, children}) => (
+const ShowcaseGroup = ({name, children}) => (
     <div className="showcase-group">
         <h3>{name}</h3>
         {children}
