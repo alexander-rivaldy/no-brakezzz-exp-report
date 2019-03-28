@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import React from "react"
-import {Highlight, Highlights, WeekHeader} from "../components/week-template/week-layout"
+import {WeekHeader} from "../components/weeks/week-header";
+import {Highlight, Highlights} from "../components/weeks/highlight";
 
 
 const WEEKNUM = 0;

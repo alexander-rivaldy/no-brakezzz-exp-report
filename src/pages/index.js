@@ -2,7 +2,7 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import {AllWeekPanels} from "../components/week-template/week-layout";
+import {AllWeekPanels} from "../components/weeks/week-panels";
 
 
 
