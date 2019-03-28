@@ -24,7 +24,7 @@ export const AllShowcase = ({weekNum}) => {
     const retro = Weeks[weekNum].showcaseRetro;
 
     people.push(facilitators.map((item, key) =>
-        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item.image}/>
     ))
     showcase.push(
         <ShowcaseGroup name={FACILITATOR}>
@@ -35,7 +35,7 @@ export const AllShowcase = ({weekNum}) => {
     people = [];
 
     people.push(speakers.map((item, key) =>
-        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item.image}/>
     ))
     showcase.push(
         <ShowcaseGroup name={SPEAKER}>
@@ -45,14 +45,14 @@ export const AllShowcase = ({weekNum}) => {
 
     showcase.push(
         <ShowcaseGroup name={SCRIBE}>
-            <TeamMemberImage classname={ShowcasePeopleClass} name={scribe}/>
+            <TeamMemberImage classname={ShowcasePeopleClass} name={scribe.image}/>
         </ShowcaseGroup>
     )
 
     people = [];
 
     people.push(operators.map((item, key) =>
-        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item.image}/>
     ))
     showcase.push(
         <ShowcaseGroup name={OPERATOR}>
@@ -63,7 +63,12 @@ export const AllShowcase = ({weekNum}) => {
     people = [];
 
     people.push(retro.map((item, key) =>
+        item.image
+            ?
+        <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item.image}/>
+            :
         <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>
+
     ))
     showcase.push(
         <ShowcaseGroup name={RETRO}>

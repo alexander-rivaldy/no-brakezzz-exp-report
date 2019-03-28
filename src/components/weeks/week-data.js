@@ -1,19 +1,22 @@
 import {
-    Alex,
-    Ann, Bowling, Bryce, Daniel, DanielUrl,
+    Bowling,
+    DanielUrl,
     Development,
     Discussion,
     Food,
     Game,
-    GoCD, HandoverIcon, HoliIcon,
-    Jacob,
-    Louise, Monitor, Pamela, PamelaUrl,
-    Peacock, PO, Poison,
-    Rodney,
-    Sarah,
-    ShowcaseIcon, Spandan,
-    Stivali, Toggle, Trystan, Zoey
+    GoCD,
+    HandoverIcon,
+    HoliIcon,
+    Monitor,
+    PamelaUrl,
+    Peacock,
+    PO,
+    Poison,
+    ShowcaseIcon,
+    Toggle
 } from "../image";
+import {NoBrakezzz} from "../team/team-data";
 
 export const Weeks = [
     {
@@ -92,17 +95,18 @@ export const Weeks = [
             }
         ],
         showcaseFacilitator: [
-            Rodney, Louise
+            NoBrakezzz.rodney, NoBrakezzz.louise
         ],
         showcaseSpeaker: [
-            Sarah, Jacob, Stivali, Spandan, Trystan
+            NoBrakezzz.sarah, NoBrakezzz.jacob, NoBrakezzz.stivali, NoBrakezzz.spandan,
+            NoBrakezzz.trystan
         ],
-        showcaseScribe: Pamela,
+        showcaseScribe: NoBrakezzz.pamela,
         showcaseOperator: [
-            Zoey
+            NoBrakezzz.zoey
         ],
         showcaseRetro: [
-            Ann, Daniel
+            NoBrakezzz.ann, NoBrakezzz.daniel
         ],
         slideUrl: "https://docs.google.com/a/thoughtworks.com/presentation/d/e/2PACX-1vQ-pstLMNLi3wlENy_p0F-MY2BQyT_F9ypFVbSg7TWRpgg9tPwCKzP4JDf-pLPMH_uGiiU01cLh9Xha/embed?start=false&loop=false&delayms=10000"
 
@@ -151,17 +155,17 @@ export const Weeks = [
             }
         ],
         showcaseFacilitator: [
-            Rodney, Jacob
+            NoBrakezzz.rodney, NoBrakezzz.jacob
         ],
         showcaseSpeaker: [
-            Bryce, Stivali, Alex, Trystan
+            NoBrakezzz.bryce, NoBrakezzz.stivali, NoBrakezzz.alex, NoBrakezzz.trystan
         ],
-        showcaseScribe: Sarah,
+        showcaseScribe: NoBrakezzz.sarah,
         showcaseOperator: [
-            Spandan
+            NoBrakezzz.spandan
         ],
         showcaseRetro: [
-            Sarah, Pamela
+            NoBrakezzz.sarah, NoBrakezzz.pamela
         ],
         slideUrl: "https://docs.google.com/presentation/d/e/2PACX-1vTtY0Si6JhzLA9F281QCNKTF7X1U1AKJZn-G4NeFsRiQQjubszv16CuRgHumJPlUJNtW_sQnlOsii2L/embed?start=false&loop=false&delayms=10000"
     },
@@ -186,17 +190,18 @@ export const Weeks = [
             }
         ],
         showcaseFacilitator: [
-            Bryce, Alex
+            NoBrakezzz.bryce, NoBrakezzz.alex
         ],
         showcaseSpeaker: [
-            Sarah, Bryce, Pamela, Zoey, Spandan, Trystan
+            NoBrakezzz.sarah, NoBrakezzz.bryce, NoBrakezzz.pamela,
+            NoBrakezzz.zoey, NoBrakezzz.spandan, NoBrakezzz.trystan
         ],
-        showcaseScribe: Stivali,
+        showcaseScribe: NoBrakezzz.stivali,
         showcaseOperator: [
-            Jacob
+            NoBrakezzz.jacob
         ],
         showcaseRetro: [
-            Trystan, Stivali
+            NoBrakezzz.trystan, NoBrakezzz.stivali
         ],
         slideUrl:"https://docs.google.com/presentation/d/e/2PACX-1vS95JUd2MeFxITq-uHpMCojRR-0emuuzbQFh09FF31Gzgt553XVys5Bqi1_YRkJ8qJgCTTVcHWdSWrc/embed?start=false&loop=false&delayms=10000"
     },
@@ -239,14 +244,16 @@ export const Weeks = [
             }
         ],
         showcaseFacilitator: [
-            Rodney
+            NoBrakezzz.rodney
         ],
         showcaseSpeaker: [
-            Alex, Bryce, Jacob, Louise, Pamela, Sarah, Spandan, Stivali, Trystan, Zoey
+            NoBrakezzz.alex, NoBrakezzz.bryce, NoBrakezzz.jacob, NoBrakezzz.louise,
+            NoBrakezzz.pamela, NoBrakezzz.sarah, NoBrakezzz.spandan, NoBrakezzz.stivali,
+            NoBrakezzz.trystan, NoBrakezzz.zoey
         ],
-        showcaseScribe: Rodney,
+        showcaseScribe: NoBrakezzz.rodney,
         showcaseOperator: [
-            Spandan, Stivali
+            NoBrakezzz.spandan, NoBrakezzz.stivali
         ],
         showcaseRetro: [
             "Tito"
