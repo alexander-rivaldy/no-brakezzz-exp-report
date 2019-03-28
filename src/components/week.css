@@ -81,6 +81,8 @@
 
 .showcase-people img {
     margin: 0;
+    width: 75px;
+    height: 75px;
 }
 
 .showcase-people img:after {
