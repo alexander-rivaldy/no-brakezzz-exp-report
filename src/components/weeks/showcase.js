@@ -15,13 +15,13 @@ export const RETRO = "Retro Lead";
 const ShowcasePeopleClass = "showcase-people";
 
 export const AllShowcase = ({weekNum}) => {
-    let showcase = [];
+    const showcase = [];
     let people = [];
-    let facilitators = Weeks[weekNum].showcaseFacilitator;
-    let speakers = Weeks[weekNum].showcaseSpeaker;
-    let scribe = Weeks[weekNum].showcaseScribe;
-    let operators = Weeks[weekNum].showcaseOperator;
-    let retro = Weeks[weekNum].showcaseRetro;
+    const facilitators = Weeks[weekNum].showcaseFacilitator;
+    const speakers = Weeks[weekNum].showcaseSpeaker;
+    const scribe = Weeks[weekNum].showcaseScribe;
+    const operators = Weeks[weekNum].showcaseOperator;
+    const retro = Weeks[weekNum].showcaseRetro;
 
     people.push(facilitators.map((item, key) =>
         <TeamMemberImage key={key} classname={ShowcasePeopleClass} name={item}/>

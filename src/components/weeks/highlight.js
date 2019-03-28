@@ -6,8 +6,8 @@ import {Weeks} from "./week-data";
 const section = "section";
 
 export const Highlights = ({weekNum}) => {
-    let items = [];
-    let highlights = Weeks[weekNum].highlights;
+    const items = [];
+    const highlights = Weeks[weekNum].highlights;
 
     items.push(highlights.map((item, key) =>
         <OneHighlightItem key={key} item={item} />

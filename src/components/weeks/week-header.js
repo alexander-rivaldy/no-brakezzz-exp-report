@@ -5,8 +5,8 @@ import {Weeks} from "./week-data";
 const section = "section";
 
 export const WeekHeader = ({weekNum}) => {
-    let header = [];
-    let week = Weeks[weekNum];
+    const header = [];
+    const week = Weeks[weekNum];
 
     header.push( <NewBanner week={week}/> )
     header.push( <NewOverview week={week}/> )

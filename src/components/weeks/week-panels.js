@@ -3,7 +3,7 @@ import React from "react";
 import {Weeks} from "./week-data";
 
 export const AllWeekPanels = () => {
-    let elements = [];
+    const elements = [];
 
     elements.push(Weeks.map((item, key) =>
         <WeekPanel key={key} week={item} />
