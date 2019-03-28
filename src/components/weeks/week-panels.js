@@ -5,9 +5,9 @@ import {Weeks} from "./week-data";
 export const AllWeekPanels = () => {
     let elements = [];
 
-    for(let weekNum = 0; weekNum < Weeks.length; weekNum++) {
-        elements.push( <WeekPanel week={Weeks[weekNum]}/> );
-    }
+    elements.push(Weeks.map((item, key) =>
+        <WeekPanel key={key} week={item} />
+    ))
 
     return elements;
 }

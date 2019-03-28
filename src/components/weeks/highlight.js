@@ -8,11 +8,10 @@ const section = "section";
 export const Highlights = ({weekNum}) => {
     let items = [];
     let highlights = Weeks[weekNum].highlights;
-    let className = "";
 
-    for(let index = 0; index < highlights.length; index++) {
-        items.push( <OneHighlightItem className={className} item={highlights[index]} /> );
-    }
+    items.push(highlights.map((item, key) =>
+        <OneHighlightItem key={key} item={item} />
+    ))
 
     return items;
 }
