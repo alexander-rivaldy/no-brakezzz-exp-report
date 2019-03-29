@@ -1,10 +1,14 @@
 import PropTypes from "prop-types";
 import React from "react";
 import {Weeks} from "./week-data";
+import * as ReactGA from "react-ga";
 
 const section = "section";
 
 export const WeekHeader = ({weekNum}) => {
+
+    ReactGA.pageview('/week-' + weekNum);
+
     const header = [];
     const week = Weeks[weekNum];
 

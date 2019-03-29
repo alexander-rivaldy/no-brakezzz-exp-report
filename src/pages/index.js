@@ -6,7 +6,6 @@ import {AllWeekPanels} from "../components/weeks/week-panels";
 import * as ReactGA from "react-ga";
 
 
-ReactGA.initialize('UA-137045436-1');
 ReactGA.pageview('/');
 
 const IndexPage = () => (

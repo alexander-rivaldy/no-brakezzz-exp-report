@@ -13,7 +13,9 @@ import NavigationBar from "./navigationBar"
 import "./layout.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "./app.css"
+import * as ReactGA from "react-ga";
 
+ReactGA.initialize('UA-137045436-1');
 
 const Layout = ({ children }) => (
   <StaticQuery

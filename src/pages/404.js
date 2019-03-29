@@ -2,6 +2,10 @@ import React from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import * as ReactGA from "react-ga";
+
+
+ReactGA.pageview('/404');
 
 const NotFoundPage = () => (
   <Layout>

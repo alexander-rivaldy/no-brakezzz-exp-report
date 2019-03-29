@@ -3,6 +3,11 @@ import React from "react"
 
 import "../components/team/team.css"
 import {AllMember} from "../components/team/team-component";
+import * as ReactGA from "react-ga";
+
+
+ReactGA.pageview('/team');
+
 
 const Team = () => (
 
